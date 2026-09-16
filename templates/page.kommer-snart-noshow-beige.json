@@ -45,20 +45,12 @@
             "background": "",
             "text_color": ""
           }
-        },
-        "liquid_mt4piw": {
-          "type": "liquid",
-          "disabled": true,
-          "settings": {
-            "liquid": "{% \nrender '_lktn-preorder-new'\n%}"
-          }
         }
       },
       "block_order": [
         "subheading_WFbLUR",
         "heading_XGAHtr",
-        "button_raR9gn",
-        "liquid_mt4piw"
+        "button_raR9gn"
       ],
       "name": "Rich text",
       "settings": {

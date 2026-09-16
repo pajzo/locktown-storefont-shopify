@@ -105,14 +105,6 @@
             "size_chart_page": "{{ product.metafields.custom.storrelsesguide_page.value }}"
           }
         },
-        "liquid_zVTAqr": {
-          "type": "liquid",
-          "name": "See On Body Text LInk",
-          "disabled": true,
-          "settings": {
-            "liquid": "{% render '_lktn_scroll_to_spin_videos' %}"
-          }
-        },
         "inventory_DkyrBc": {
           "type": "inventory",
           "settings": {
@@ -303,7 +295,6 @@
         "product_variations_tWQzwC",
         "product_variations_m7U7UG",
         "variant_picker",
-        "liquid_zVTAqr",
         "inventory_DkyrBc",
         "quantity_selector",
         "offer_b9EYcc",

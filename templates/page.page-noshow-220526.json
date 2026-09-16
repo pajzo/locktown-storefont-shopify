@@ -166,34 +166,6 @@
         "background_gradient": ""
       }
     },
-    "custom_liquid_ANrn4k": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "name": "LKTN Bundle Badges",
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "liquid": "{% render '_lktn-bundle-badges' %}",
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "custom_liquid_pbHMqj": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "name": "LKTN Bundle Tooltip",
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "liquid": "{% render '_lktn-bundle-info-tooltip' %}",
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
     "rich_text_V3fbN8": {
       "type": "rich-text",
       "blocks": {
@@ -694,8 +666,6 @@
     "main",
     "multi_column_BkKdrF",
     "slideshow_H64wgj",
-    "custom_liquid_ANrn4k",
-    "custom_liquid_pbHMqj",
     "rich_text_V3fbN8",
     "featured_collection_DbnQn3",
     "text_with_icons_Vk6nB8",

@@ -69,22 +69,6 @@
             "low_inventory_threshold": 10
           }
         },
-        "liquid_4cYAVi": {
-          "type": "liquid",
-          "name": "LKTN Inventory",
-          "disabled": true,
-          "settings": {
-            "liquid": "{% render '_lktn-inventory', variant: product.selected_or_first_available_variant, low_threshold: 10 %}"
-          }
-        },
-        "liquid_Tdq7pr": {
-          "type": "liquid",
-          "name": "LKTN Preorder",
-          "disabled": true,
-          "settings": {
-            "liquid": "{% render '_lktn-preorder-new'  %}"
-          }
-        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {}
@@ -93,14 +77,6 @@
           "type": "shopify://apps/hitsy-progress-bar/blocks/hitsy-block/0e2f6173-7277-4c61-a4df-2e70602cd303",
           "disabled": true,
           "settings": {}
-        },
-        "liquid_QRwLmX": {
-          "type": "liquid",
-          "name": "LKTN MixMatch",
-          "disabled": true,
-          "settings": {
-            "liquid": "{% render '_lktn-mix-match2' %}"
-          }
         },
         "text_KbGpHT": {
           "type": "text",
@@ -141,11 +117,8 @@
         "product_variations_m7U7UG",
         "variant_picker",
         "inventory_DkyrBc",
-        "liquid_4cYAVi",
-        "liquid_Tdq7pr",
         "quantity_selector",
         "hitsy_progress_bar_hitsy_block_qmh4jM",
-        "liquid_QRwLmX",
         "text_KbGpHT",
         "buy_buttons",
         "liquid_EMmNci",

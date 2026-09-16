@@ -498,20 +498,6 @@
         "product_card_text_color": ""
       }
     },
-    "custom_liquid_rxPCq4": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "name": "LKTN Bundle Tooltip",
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "liquid": "{% render '_lktn-bundle-info-tooltip' %}",
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
     "rich_text_gNUbLw": {
       "type": "rich-text",
       "blocks": {
@@ -1376,7 +1362,6 @@
     "text_with_icons_mM63pX",
     "text_with_icons_R8jigy",
     "featured_collection_HDWhNT",
-    "custom_liquid_rxPCq4",
     "rich_text_gNUbLw",
     "featured_collection_4zFhxy",
     "multi_column_hH9A7P",

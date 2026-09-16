@@ -28,17 +28,10 @@
             "text_color": "",
             "gradient": ""
           }
-        },
-        "liquid_mt4piw": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "{% \nrender '_lktn-preorder-new', product_title: 'NoShow Beige', product_id: 'noshow-beige'\n%}"
-          }
         }
       },
       "block_order": [
-        "heading_XGAHtr",
-        "liquid_mt4piw"
+        "heading_XGAHtr"
       ],
       "disabled": true,
       "name": "Rich text",
