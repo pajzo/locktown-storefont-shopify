@@ -1,0 +1,47 @@
+<div class="lktn-mixmatch2">
+  <div class="mx-text">
+    <div class="prose">
+      <h5>Køb flere - spar mere</h5>
+      <p class="no-margin">Mix frit på tværs af modeller, farver og størrelser.</p>
+      <p class="no-margin">Rabatten fratrækkes automatisk i kurven.</p>
+    </div>
+  </div>
+  <div class="mx-offers">
+    <div class="mx-offer-item">3 par til 449 kr.<br>149 kr./par</div>
+
+    <div class="mx-offer-item">6 par til 749 kr.<br>124 kr./par</div>
+
+    <div class="mx-offer-item">9 par til 949 kr.<br>105 kr./par</div>
+  </div>
+</div>
+
+{% stylesheet %}
+  .mx-text {
+    /*text-align: center;*/
+    /*font-size: var(--text-h5) !important;*/
+    margin-bottom: 10px;
+  }
+
+  .mx-text .no-margin {
+    margin: 0 !important;
+  }
+
+  .mx-offers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .mx-offer-item {
+    font-size: var(--text-base) !important;
+    font-weight: normal !important;
+    /*background-color: #E3B9C9 !important;    */
+    border: 3px solid #e3b9c9;
+    color: #000000 !important;    
+    text-align: center !important;
+    padding: 10px 20px !important;
+    flex-grow: 1;
+    border-radius: 24px;
+  }
+{% endstylesheet %}

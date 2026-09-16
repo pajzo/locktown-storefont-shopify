@@ -1,0 +1,90 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "Header group",
+  "sections": {
+    "custom_html_jMRfqd": {
+      "type": "custom-html",
+      "disabled": true,
+      "name": "Short Shipment Cut Banner",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true,
+        "html": "<p style=\"text-align:center; padding:10px;\">\n🌞 Sommerferie: Vi holder lukket tirs-fre i uge 28. </p>",
+        "background": "{{ metaobjects.locktown_colors.warning.color.value }}",
+        "background_gradient": "",
+        "text_color": "#ffffff"
+      }
+    },
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "message_QiyMqj": {
+          "type": "message",
+          "repeater": "{{ metaobjects.announcement_bar_list[\"top-default-dec-2025-2\"].items.value }}",
+          "settings": {
+            "text": "{{ block.repeater.text.value }}",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "message_QiyMqj"
+      ],
+      "settings": {
+        "enable_sticky": false,
+        "show_on_homepage_only": false,
+        "navigation_mode": "arrows",
+        "autoplay": true,
+        "cycle_speed": 4,
+        "scrolling_speed": 30,
+        "text_size": "text-xs",
+        "background": "{{ metaobjects.locktown_colors.noir.color.value }}",
+        "background_gradient": "",
+        "text_color": "#ffffff"
+      }
+    },
+    "header": {
+      "type": "header",
+      "custom_css": [],
+      "settings": {
+        "enable_sticky": true,
+        "hide_on_scroll": true,
+        "logo": "{{shop.brand.logo}}",
+        "logo_max_width": 120,
+        "logo_mobile_max_width": 100,
+        "menu": "main-menu-2025-2",
+        "sidebar_menu": "",
+        "secondary_menu": "",
+        "customer_account_menu": "customer-account-main-menu",
+        "menu_open_trigger": "click",
+        "opening_from": "left",
+        "layout": "logo_left_navigation_center",
+        "show_social_media": true,
+        "show_locale_selector": false,
+        "show_country_selector": false,
+        "show_country_flag": true,
+        "show_country_name": true,
+        "transparent_header_text_color": "#ffffff",
+        "transparent_logo": "shopify://shop_images/Logo_500x230_Trans_White_Text.svg",
+        "reduce_padding": true,
+        "background_opacity": 100,
+        "background_blur_radius": 10
+      }
+    }
+  },
+  "order": [
+    "custom_html_jMRfqd",
+    "announcement-bar",
+    "header"
+  ]
+}

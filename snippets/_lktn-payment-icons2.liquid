@@ -1,0 +1,50 @@
+{%- comment -%}
+Usage:
+{% render 'lt-paymenticons', align: 'left' %}
+{% render 'lt-paymenticons', align: 'center' %}
+{% render 'lt-paymenticons', align: 'right' %}
+{%- endcomment -%}
+
+{%- assign align = align | default: 'left' -%}
+
+{%- case align -%}
+  {%- when 'center' -%}{%- assign justify = 'center' -%}
+  {%- when 'right'  -%}{%- assign justify = 'flex-end' -%}
+  {%- else -%}{%- assign justify = 'flex-start' -%}
+{%- endcase -%}
+
+<style>
+  /* Scoped til denne snippet */
+  .lt-paymenticons { width: 100%; }
+  .lt-paymenticons__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-1-5);
+    justify-content: {{ justify }};
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  /* hvis payment_type_svg_tag giver svg'er med forskellig højde */
+  .lt-paymenticons__list svg {
+    height: var(--text-h3);
+    width: auto;
+    display: block;
+  }
+
+  /* hvis du bruger <li class="contents"> og det driller spacing i nogle themes */
+  .lt-paymenticons__list > li {
+    display: contents;
+  }
+</style>
+
+<div class="lt-paymenticons">
+  <ul class="lt-paymenticons__list">
+    <li>{{ 'mobilepay' | payment_type_svg_tag }}</li> 
+    {%- for type in shop.enabled_payment_types -%}
+      <li>{{ type | payment_type_svg_tag }}</li>
+    {%- endfor -%}
+  </ul>
+</div>

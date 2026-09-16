@@ -1,0 +1,29 @@
+{% assign review_images = product.metafields.custom.review_image_list %}
+{% assign review_videos = product.metafields.custom.review_video_list %}
+
+{% if review_images == blank %}
+  <style>
+    section#shopify-section-template--26023685095756__images_with_text_scrolling_z76hVk,
+    section#shopify-section-template--26048949125452__images_with_text_scrolling_z76hVk {
+        display: none;
+    }
+  </style>
+{% endif %}
+
+{% if review_videos == blank %}
+  <style>
+    section#shopify-section-template--26023685095756__media_with_text_rga67Y,
+    section#shopify-section-template--26048949125452__media_with_text_rga67Y {
+        display: none;
+    }
+  </style>
+{% endif %}
+
+{% if review_images == blank and review_videos == blank %}
+  <style>
+    section#shopify-section-template--26023685095756__impact_text_rjmXRh,
+    section#shopify-section-template--26048949125452__impact_text_rjmXRh {
+        display: none;
+    }
+  </style>
+{% endif %}

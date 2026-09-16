@@ -1,0 +1,6 @@
+<ul class="lktn-payment-icons h-stack wrap gap-2">
+  <li class="contents">{{ 'mobilepay' | payment_type_svg_tag }}</li>
+  {%- for type in shop.enabled_payment_types -%}
+    <li class="contents">{{ type | payment_type_svg_tag }}</li>
+  {%- endfor -%}
+</ul>

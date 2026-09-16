@@ -1,0 +1,84 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "contact": {
+      "type": "contact",
+      "settings": {
+        "full_width": true,
+        "subheading": "Brug for hjælp?",
+        "title": "{{ page.title }}",
+        "content": "{{ page.content }}",
+        "text_position": "start",
+        "contact_form_size": "large",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "contact_background": "#ffffff",
+        "contact_text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
+    "faq_J4NFnx": {
+      "type": "faq",
+      "blocks": {
+        "item_3k3FPF": {
+          "type": "item",
+          "repeater": "{{ metaobjects.faq_list.contact.items.value }}",
+          "settings": {
+            "title": "{{ block.repeater.question.value }}",
+            "content": "{{ block.repeater.answer | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "item_3k3FPF"
+      ],
+      "disabled": true,
+      "name": "FAQ",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Ofte stillede spørgsmål & svar",
+        "content": "<p>Vi har samlet svar på de spørgsmål, vi oftest får. Så kan du hurtigt finde den information, du har brug for.</p>",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "contact",
+    "faq_J4NFnx"
+  ]
+}

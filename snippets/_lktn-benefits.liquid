@@ -1,0 +1,93 @@
+{%- comment -%}
+  Snippet: product-features
+  Metafields: product.metafields.custom.feature_1..feature_4
+
+  Optional params:
+    - icon_color: CSS color (default: #E3B9C9)
+    - icon_size: number px (default: 18)
+    - text_size: CSS font-size (default: 15px)  <-- NEW (kan være "14px", "1rem", "0.95em" osv.)
+{%- endcomment -%}
+
+{%- assign f1 = product.metafields.custom.feature_1 -%}
+{%- assign f2 = product.metafields.custom.feature_2 -%}
+{%- assign f3 = product.metafields.custom.feature_3 -%}
+{%- assign f4 = product.metafields.custom.feature_4 -%}
+
+{%- assign icon_color = icon_color | default: '#E3B9C9' -%}
+{%- assign icon_size = icon_size | default: 25 -%}
+{%- assign text_size = text_size | default: 'var(--text-lg)' -%}
+
+{%- if f1 != blank or f2 != blank or f3 != blank or f4 != blank -%}
+  <div
+    class="lt-features"
+    style="
+      --lt-feature-icon-color: {{ icon_color }};
+      --lt-feature-icon-size: {{ icon_size }}px;
+      --lt-feature-text-size: {{ text_size }};
+    "
+  >
+    <ul class="lt-features__list" role="list">
+      {%- if f1 != blank -%}
+        <li class="lt-features__item">
+          <span class="lt-features__icon" aria-hidden="true">{% render '_lktn-icon-check', size: icon_size %}</span>
+          <span class="lt-features__text">{{ f1 }}</span>
+        </li>
+      {%- endif -%}
+
+      {%- if f2 != blank -%}
+        <li class="lt-features__item">
+          <span class="lt-features__icon" aria-hidden="true">{% render '_lktn-icon-check', size: icon_size %}</span>
+          <span class="lt-features__text">{{ f2 }}</span>
+        </li>
+      {%- endif -%}
+
+      {%- if f3 != blank -%}
+        <li class="lt-features__item">
+          <span class="lt-features__icon" aria-hidden="true">{% render '_lktn-icon-check', size: icon_size %}</span>
+          <span class="lt-features__text">{{ f3 }}</span>
+        </li>
+      {%- endif -%}
+
+      {%- if f4 != blank -%}
+        <li class="lt-features__item">
+          <span class="lt-features__icon" aria-hidden="true">{% render '_lktn-icon-check', size: icon_size %}</span>
+          <span class="lt-features__text">{{ f4 }}</span>
+        </li>
+      {%- endif -%}
+    </ul>
+  </div>
+
+  <style>
+    .lt-features__list{
+      list-style:none;
+      padding:0;
+      margin:0;
+      display:grid;
+      gap:10px;
+    }
+    .lt-features__item{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      line-height:1.35;
+    }
+    .lt-features__icon{
+      flex:0 0 auto;
+      width:var(--lt-feature-icon-size,18px);
+      height:var(--lt-feature-icon-size,18px);
+      color:var(--lt-feature-icon-color,#ff4fa3);
+      margin-top:2px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .lt-features__icon svg{
+      display:block;
+      width:100%;
+      height:100%;
+    }
+    .lt-features__text{
+      font-size: var(--lt-feature-text-size, 15px);
+    }
+  </style>
+{%- endif -%}

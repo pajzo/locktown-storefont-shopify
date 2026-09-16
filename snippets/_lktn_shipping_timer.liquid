@@ -1,0 +1,154 @@
+<div id="lktn-shipping-timer-wrapper">
+  <span class="text-with-icon lktn-shipping-timer text-warning">
+    <svg
+      role="presentation"
+      focusable="false"
+      stroke-width="1.5"
+      width="18"
+      height="18"
+      class="icon icon-clock"
+      style="--icon-height: 18px"
+      viewBox="0 0 18 18"
+    >
+      <circle cx="9" cy="9" r="8.5" stroke="currentColor" fill="none"/>
+      <path d="M9 5V9L12 11" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <div class="timer-today timer-hidden">
+      Bestil inden <span class="timer-badge timer-today-badge">xx:xx:xx</span> - vi sender i dag
+    </div>
+    <div class="timer-text timer-hidden">Vi sender igen <span class="timer-badge timer-text-badge">?</span></div>
+  </span>
+</div>
+
+{% stylesheet %}
+  #lktn-shipping-timer-wrapper {
+    display: none;
+  }
+
+  .timer-badge {
+    background: rgb(var(--warning-background));
+    color: rgb(var(--warning-text));
+    padding: 0 var(--spacing-1-5);
+    border-radius: var(--rounded-input);
+    font-weight: var(--heading-font-weight);
+    min-width: 55px;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .timer-badge.urgent {
+    background: rgb(var(--error-background));
+    color: rgb(var(--error-text));
+  }
+
+  .timer-hidden {
+    display: none !important;
+  }
+
+  variant-inventory .lktn-shipping-timer {
+    margin-top: var(--spacing-2-5);
+  }
+{% endstylesheet %}
+
+{% javascript %}
+  function render() {
+    fetch('https://opshub.lktn.dk/api/public/shipping/cutoff')
+      .then((r) => r.json())
+      .then((data) => {
+        var shippingCutoff = data;
+
+        if (shippingCutoff.today) {
+          elementRemoveClass('.timer-today', 'timer-hidden');
+
+          var cutoffTime = new Date(data.cutoffAt).getTime();
+          var timerInterval = null;
+
+          function updateTimer() {
+            var remaining = Math.floor((cutoffTime - Date.now()) / 1000);
+
+            if (remaining <= 0) {
+              elementAddClass('.timer-today', 'timer-hidden');
+              clearInterval(timerInterval);
+              render();
+              return;
+            }
+
+            var h = Math.floor(remaining / 3600);
+            var m = Math.floor((remaining % 3600) / 60);
+            var s = remaining % 60;
+
+            var formatted =
+              (h > 0 ? String(h).padStart(2, '0') + ':' : '') +
+              String(m).padStart(2, '0') +
+              ':' +
+              String(s).padStart(2, '0');
+
+            elementSetContent('.timer-today-badge', formatted);
+
+            if (remaining < 3600) {
+              elementAddClass('.timer-today-badge', 'urgent');
+            }
+          }
+
+          timerInterval = setInterval(updateTimer, 1000);
+          updateTimer();          
+        } else {
+          elementRemoveClass('.timer-text', 'timer-hidden');
+
+          if (shippingCutoff.tomorrow) {
+            elementSetContent('.timer-text-badge', 'i morgen kl. ' + shippingCutoff.clock);
+          } else {
+            elementSetContent('.timer-text-badge', shippingCutoff.text);
+          }
+        }
+      })
+      .catch(function (err) {
+        console.error('Shipping cutoff fejlede:', err);
+        elementAddClass('.lktn-shipping-timer', 'timer-hidden');
+      });
+  }
+
+  function elementSetContent(selector, text) {
+    document.querySelectorAll(selector).forEach(function (el) {
+      el.innerHTML = text;
+    });
+  }
+
+  function elementAddClass(selector, className) {
+    document.querySelectorAll(selector).forEach(function (el) {
+      el.classList.add(className);
+    });
+  }
+
+  function elementRemoveClass(selector, className) {
+    document.querySelectorAll(selector).forEach(function (el) {
+      el.classList.remove(className);
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', render);
+  document.addEventListener('variant:change', injectInventory);
+
+  injectInventory();
+
+  function injectInventory() {
+    var soldOutBadge = document.querySelector('sold-out-badge');
+    if (soldOutBadge != null) return;
+
+    var variantInventoryElement = document.querySelector('variant-inventory');
+
+    if (variantInventoryElement == null) return;
+
+    var spanElement = variantInventoryElement.querySelector('span');
+    if (spanElement == null) return;
+
+    var shippingTimerElement = variantInventoryElement.querySelector('.lktn-shipping-timer');
+    if (shippingTimerElement != null) return;
+
+    var rootElement = document.getElementById('lktn-shipping-timer-wrapper').querySelector('.lktn-shipping-timer');
+    if (rootElement == null) return;
+    var newElement = rootElement.cloneNode(true);
+
+    spanElement.after(newElement);
+  }
+{% endjavascript %}

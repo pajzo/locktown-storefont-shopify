@@ -1,0 +1,42 @@
+<div class="bundle-badges-container">
+  <p class="subheading">Silkebløde, seamless og camel toe–proof.</p>
+  <h2 class="h2" reveal-on-scroll="true" style="opacity: 1;"><split-lines>NoShow-serien</split-lines></h2>
+  <div>Mix &amp; Match frit mellem modeller, størrelser og farver.</div>
+  <div class="bundle-badge-list">
+    <span class="badge badge--primary badge--custom badge--bundle">3 for 449 kr.</span
+    ><span class="badge badge--primary badge--custom badge--bundle">6 for 749 kr.</span
+    ><span class="badge badge--primary badge--custom badge--bundle">9 for 949 kr.</span>
+  </div>
+</div>
+
+{% stylesheet %}
+    .bundle-badges-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+    margin-bottom: calc(var(--calculated-section-spacing-block-end) / 4 * -1);
+    margin-top: calc(var(--calculated-section-spacing-block-end) / 4 * -1);
+  }
+
+  .bundle-badges-container .bundle-badge-list {
+    display: flex;
+    gap: var(--spacing-2-5);
+  }
+
+  @media (max-width: 768px) {
+    .bundle-badges-container .bundle-badge-list {
+      justify-content: space-between;
+      gap: var(--spacing-1-5);
+    }
+  }
+
+  .bundle-badges-container .badge--bundle {
+    background-color: #fceaf1;
+    font-size: var(--text-base) !important;
+    padding: 3px var(--spacing-3);
+    border-color: #f45b8c;
+    border-width: 1px;
+    padding-block-start: var(--spacing-1-5) !important;
+    padding-block-end: var(--spacing-1-5) !important;
+  }
+{% endstylesheet %}

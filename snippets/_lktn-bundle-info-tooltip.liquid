@@ -1,0 +1,161 @@
+<div class="lktn-bundle-badges-container">
+  <p class="subheading">Silkebløde, seamless og camel toe–proof.</p>
+  <h2 class="h2" reveal-on-scroll="true" style="opacity: 1;"><split-lines>NoShow-serien</split-lines></h2>
+  <div class="bundle-text-container">Mix &amp; Match frit mellem modeller, størrelser og farver.</div>
+  <div class="bundle-badge-list">
+
+    <span class="badge badge--primary badge--custom badge--bundle" data-lktntooltip="150 kr. pr. par|Mix &amp; match frit mellem modeller, størrelser og farver.">
+      3 for 449 kr. {% render '_lktn_tooltip_icon' %}
+    </span>
+
+    <span class="badge badge--primary badge--custom badge--bundle" data-lktntooltip="125 kr. pr. par|Mix &amp; match frit mellem modeller, størrelser og farver.">
+      6 for 749 kr. {% render '_lktn_tooltip_icon' %}
+    </span>
+
+    <span class="badge badge--primary badge--custom badge--bundle" data-lktntooltip="105 kr. pr. par|Mix &amp; match frit mellem modeller, størrelser og farver.">
+      9 for 949 kr. {% render '_lktn_tooltip_icon' %}
+    </span>
+
+  </div>
+</div>
+
+{% stylesheet %}
+.lktn-bundle-badges-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+  margin-bottom: calc(var(--calculated-section-spacing-block-end) / 4 * -1);
+  margin-top: calc(var(--calculated-section-spacing-block-end) / 4 * -1);
+}
+.lktn-bundle-badges-container .bundle-badge-list {
+  display: flex;
+  gap: var(--spacing-2-5);
+}
+@media (max-width: 480px) {
+  .lktn-bundle-badges-container .bundle-badge-list {    
+    gap: var(--spacing-1-5);
+  }
+}
+.lktn-bundle-badges-container .badge--bundle {
+  background: #fce8f0;
+  font-size: var(--text-sm) !important;
+  padding: 3px var(--spacing-3-5);
+  border: 1px solid #f4b8d0;
+  border-width: 1px;
+  padding-block-start: var(--spacing-1-5) !important;
+  padding-block-end: var(--spacing-1-5) !important;
+  color: #8c2d50;
+  font-weight: normal;
+  position: relative;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+@media (max-width: 480px) {
+  .lktn-bundle-badges-container .badge--bundle {
+    padding: 3px var(--spacing-2-5);
+  }
+}
+.lktn-tooltip {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 12px 16px;
+  min-width: 210px;
+  box-shadow: 0 4px 20px rgba(0,0,0,.1);
+  z-index: 100;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s;
+  text-align: left;
+}
+.lktn-tooltip.lktn-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+.lktn-tooltip::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-left: 1px solid #eee;
+  border-top: 1px solid #eee;
+}
+.lktn-tooltip-price {
+  font-size: 13px;
+  font-weight: 500;
+  color: #111;
+  margin-bottom: 6px;
+}
+.lktn-tooltip-note {
+  font-size: 11.5px;
+  color: #aaa;
+  line-height: 1.5;
+}
+{% endstylesheet %}
+
+{% javascript %}
+(function() {
+  function positionTooltip(badge, tooltip) {
+    tooltip.style.left = '50%';
+    tooltip.style.transform = 'translateX(-50%)';
+
+    var rect = tooltip.getBoundingClientRect();
+    var margin = 8;
+
+    if (rect.left < margin) {
+      var shift = margin - rect.left;
+      tooltip.style.left = 'calc(50% + ' + shift + 'px)';
+    } else if (rect.right > window.innerWidth - margin) {
+      var shift = rect.right - (window.innerWidth - margin);
+      tooltip.style.left = 'calc(50% - ' + shift + 'px)';
+    }
+  }
+
+  function initTooltips() {
+    document.querySelectorAll('.badge--bundle').forEach(function(badge) {
+      if (badge.dataset.tooltipInit) return;
+      badge.dataset.tooltipInit = 'true';
+
+      var parts = badge.dataset.lktntooltip.split('|');
+      var tooltip = document.createElement('div');
+      tooltip.className = 'lktn-tooltip';
+      tooltip.innerHTML = '<div class="lktn-tooltip-price">' + parts[0] + '</div><div class="lktn-tooltip-note">' + parts[1] + '</div>';
+      badge.appendChild(tooltip);
+
+      badge.addEventListener('click', function(e) {
+        e.stopPropagation();
+        var isVisible = tooltip.classList.contains('lktn-visible');
+        document.querySelectorAll('.lktn-tooltip.lktn-visible').forEach(function(t) {
+          t.classList.remove('lktn-visible');
+        });
+        if (!isVisible) {
+          tooltip.classList.add('lktn-visible');
+          positionTooltip(badge, tooltip);
+        }
+      });
+    });
+
+    document.addEventListener('click', function() {
+      document.querySelectorAll('.lktn-tooltip.lktn-visible').forEach(function(t) {
+        t.classList.remove('lktn-visible');
+      });
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initTooltips);
+  } else {
+    initTooltips();
+  }
+})();
+{% endjavascript %}

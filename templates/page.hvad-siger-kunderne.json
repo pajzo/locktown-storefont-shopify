@@ -1,0 +1,344 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "content_width": "120ch"
+      }
+    },
+    "video_DWTrk3": {
+      "type": "video",
+      "blocks": {
+        "play_zU3wnx": {
+          "type": "play",
+          "settings": {}
+        },
+        "heading_34Jxh8": {
+          "type": "heading",
+          "settings": {
+            "text": "Det siger vores kunder",
+            "heading_tag": "h1"
+          }
+        },
+        "subheading_eAnbQV": {
+          "type": "subheading",
+          "settings": {
+            "text": "NoShow er skabt af kvinder – til kvinder. Her er deres oplevelser."
+          }
+        }
+      },
+      "block_order": [
+        "play_zU3wnx",
+        "heading_34Jxh8",
+        "subheading_eAnbQV"
+      ],
+      "disabled": true,
+      "name": "Hero Video",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": true,
+        "autoplay": true,
+        "video_size": "lg",
+        "video": "{{ metaobjects.product_review_video[\"mette-30-ar\"].video.value }}",
+        "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "image_with_text_overlay_3jgFTE": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_fTN47B": {
+          "type": "heading",
+          "settings": {
+            "text": "Det siger vores kunder",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_Y9m9iN": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Over 1000+ kvinder har allerede prøvet vores trusser – her kan du læse nogle af deres oplevelser med pasform, komfort og NoShow-effekten.</p><p>Du finder anmeldelser fra kvinder i alle størrelser, aldre og hverdagssituationer – så du kan se, om LOCKTOWN også er noget for dig.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_fTN47B",
+        "richtext_Y9m9iN"
+      ],
+      "disabled": true,
+      "name": "Hero Det siger vores kunder",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": true,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "rich_text_yGwV4P": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_V4Yf7k": {
+          "type": "heading",
+          "settings": {
+            "text": "Det siger vores kunder",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_yDbgrJ": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Over 2000+ kvinder har allerede prøvet vores trusser – her kan du læse nogle af deres oplevelser med pasform, komfort og NoShow-effekten. </p><p>Du finder anmeldelser fra kvinder i alle størrelser, aldre og hverdagssituationer – så du kan se, om LOCKTOWN også er noget for dig.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_V4Yf7k",
+        "richtext_yDbgrJ"
+      ],
+      "name": "Text Det siger vores kunder",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "media_grid_F8k6kF": {
+      "type": "media-grid",
+      "blocks": {
+        "image_mUxe79": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/28C9FB03-8B3D-4137-8061-59F80CFADA50_ratio_1-1.jpg",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-end-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-end-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_AJFtxJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/processed-7900E1A7-49D4-4742-963A-9D407565C8C6_ratio_1-1.jpg",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_9rfgaf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/D3C5159B-3292-4D1D-9F2E-A2AF17A30F9B_6d29a462-b933-4d6b-8d17-9c6afd03219e.jpg",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_xMJzGB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/att.aPvqtQIaDw29ClIp1VacmahAUI8aKNRlnUtCsQAIjwk.jpg",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_mUxe79",
+        "image_AJFtxJ",
+        "image_9rfgaf",
+        "image_xMJzGB"
+      ],
+      "name": "Media grid - Insider pictures",
+      "settings": {
+        "full_width": true,
+        "reduce_width": false,
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "desktop_row_height": 400,
+        "mobile_row_height": 260,
+        "background": "{{ metaobjects.locktown_colors[\"baggrund-subtil\"].color.value }}",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "1759666751df3ef064": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_all_reviews_page_c9fQKN": {
+          "type": "shopify://apps/judge-me-reviews/blocks/all_reviews_page/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "max_width": 1200,
+            "review_source": "all",
+            "show_all_reviews_in_same_tab": false,
+            "show_first": "product",
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_all_reviews_page_c9fQKN"
+      ],
+      "custom_css": [],
+      "name": "Judge.me section",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "scrolling_text_w8wjMY": {
+      "type": "scrolling-text",
+      "disabled": true,
+      "name": "Scroll_NoShowJustGlow",
+      "settings": {
+        "full_width": true,
+        "text": "#NoShowJustGlow",
+        "text_size": "small",
+        "text_style": "fill",
+        "scrolling_mode": "auto",
+        "scrolling_speed": 10,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "text_gradient": "linear-gradient(90deg, rgba(178, 138, 148, 1) 11%, rgba(233, 201, 205, 1) 99%)"
+      }
+    },
+    "rich_text_KRfraj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_7fnmPB": {
+          "type": "heading",
+          "settings": {
+            "text": "Klar til at prøve?",
+            "heading_tag": "h4",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_BbqDBL": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Vælg din favoritmodel og oplev forskellen selv – bestil i dag og få leveret i morgen.</p>"
+          }
+        },
+        "button_HiLim3": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "Shop NoShow",
+            "url": "shopify://pages/noshow",
+            "background": "{{ metaobjects.locktown_colors[\"baggrund-highlight\"].color.value }}",
+            "text_color": "{{ metaobjects.locktown_colors.noir.color.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "heading_7fnmPB",
+        "richtext_BbqDBL",
+        "button_HiLim3"
+      ],
+      "name": "Shop CTA",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "video_DWTrk3",
+    "image_with_text_overlay_3jgFTE",
+    "rich_text_yGwV4P",
+    "media_grid_F8k6kF",
+    "1759666751df3ef064",
+    "scrolling_text_w8wjMY",
+    "rich_text_KRfraj"
+  ]
+}

@@ -1,0 +1,631 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "content_width": "120ch"
+      }
+    },
+    "multi_column_BkKdrF": {
+      "type": "multi-column",
+      "blocks": {
+        "item_yKTqtj": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/NS1_NOV2025-high-black-front.jpg",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "High Waist",
+            "heading_tag": "h4",
+            "content": "<p>Ekstra dækning og en smooth silhuet, perfekt under kjoler og højtaljede styles.</p>",
+            "link_url": "shopify://products/noshow-thong-high-sort",
+            "link_text": "Oplev High Waist",
+            "link_style": "button"
+          }
+        },
+        "item_YaDgzC": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/NS1_NOV2025-mid-black-front.jpg",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Mid Waist",
+            "heading_tag": "h4",
+            "content": "<p>Den klassiske hverdags-pasform, der fungerer til både jeans og træningstights.</p>",
+            "link_url": "shopify://products/noshow-thong-mid-sort",
+            "link_text": "Oplev Mid Waist",
+            "link_style": "button"
+          }
+        },
+        "item_9PxiEp": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/NS1_NOV2025-low-black-front.jpg",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Low Waist",
+            "heading_tag": "h4",
+            "content": "<p>Let og diskret komfort til lavtaljede styles, når du vil føle dig fri uden synlige kanter.</p>",
+            "link_url": "shopify://products/noshow-thong-low-sort",
+            "link_text": "Oplev Low Waist",
+            "link_style": "button"
+          }
+        },
+        "item_HKHNRk": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "show_controls": false,
+            "column_size": "4",
+            "title": "Breif",
+            "heading_tag": "h4",
+            "content": "<p>Kommer snart...</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_yKTqtj",
+        "item_YaDgzC",
+        "item_9PxiEp",
+        "item_HKHNRk"
+      ],
+      "disabled": true,
+      "name": "Find din perfekte pasform",
+      "settings": {
+        "full_width": false,
+        "stack_on_mobile": false,
+        "gap": "x-large",
+        "text_alignment": "start",
+        "subheading": "NoShow-serien",
+        "title": "Find din perfekte pasform",
+        "content": "<p>Én idé. Tre løsninger.</p><p>Vores trusser er skabt til kvinder, der vil have både komfort og et look, der bare spiller – fra første skridt til sen aften.<br/><br/>Silkebløde, seamless og med den dér “second skin”-følelse, du ikke vidste, du manglede. Ingen kanter. Ingen camel toe. Ingen kompromiser.</p><p>Fælles for dem alle? De føles som ingenting – og alligevel gør de en kæmpe forskel ♥︎</p>",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "image_with_text_overlay_hnnQ6r": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_gkqJgj": {
+          "type": "subheading",
+          "settings": {
+            "text": "NoShow-serien"
+          }
+        },
+        "heading_rW9L3e": {
+          "type": "heading",
+          "settings": {
+            "text": "Én idé.",
+            "heading_tag": "h2"
+          }
+        },
+        "heading_Qk7NKx": {
+          "type": "heading",
+          "settings": {
+            "text": "Fire pasformer.",
+            "heading_tag": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_gkqJgj",
+        "heading_rW9L3e",
+        "heading_Qk7NKx"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/3pasform-2.png",
+        "mobile_image": "shopify://shop_images/Untitled_design_13.jpg",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "slideshow_H64wgj": {
+      "type": "slideshow",
+      "blocks": {
+        "image_tWzTcp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/3pasform-2.png",
+            "mobile_image": "shopify://shop_images/Untitled_design_13.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center-start sm:text-start",
+            "subheading": "NoShow-serien",
+            "title": "Én idé. Tre pasformer.",
+            "heading_tag": "h2",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "video_HegB9q": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "video": "shopify://files/videos/Generated with Kive.ai - danish females (3) wearing naturel without any tattoos_ different body sizes (petite_ normal_ curvy)_ different color hair and skin tone_ standing with back turned to the camera_ .mp4",
+            "mobile_video": "shopify://files/videos/Untitled video - Made with Clipchamp (7).mp4",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-end-center text-center",
+            "desktop_text_position": "sm:place-self-end-center sm:text-center",
+            "subheading": "NoShow-serien",
+            "title": "Én idé. Tre pasformer.",
+            "heading_tag": "h2",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_tWzTcp",
+        "video_HegB9q"
+      ],
+      "disabled": true,
+      "name": "Slideshow",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "show_initial_transition": false,
+        "image_size": "auto",
+        "controls_type": "dots",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 6,
+        "background": "#f2f2f2",
+        "background_gradient": ""
+      }
+    },
+    "featured_collection_DbnQn3": {
+      "type": "featured-collection",
+      "name": "NoShow-serien collection",
+      "settings": {
+        "collection": "noshow",
+        "products": [],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_count": 50,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "subheading": "Silkebløde, seamless og camel toe–proof.",
+        "title": "Køb flere - spar mere",
+        "content": "<p>Mix frit på tværs af modeller, farver og størrelser. Rabatten fratrækkes automatisk i kurven.</p><ul><li>3 par til 449 kr. - 149 kr./par</li><li>6 par til 749 kr. - 124 kr./par</li><li>9 par til 949 kr. - 105 kr./par</li></ul>",
+        "link_url": "",
+        "link_text": "",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "text_with_icons_Vk6nB8": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item_YKAere": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-target",
+            "mobile_icon_width": 32,
+            "icon_width": 32,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "{{ metaobjects.usp_features[\"camel-toe-proof\"].title.value }}",
+            "content": "<p>{{ metaobjects.usp_features[\"camel-toe-proof\"].text.value }}</p>"
+          }
+        },
+        "item_Cfq8bh": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-recycle",
+            "mobile_icon_width": 32,
+            "icon_width": 32,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "{{ metaobjects.usp_features[\"gratis-ombytning-90-dage\"].title.value }}",
+            "content": "<p>{{ metaobjects.usp_features[\"gratis-ombytning-90-dage\"].text.value }}</p>"
+          }
+        },
+        "item_hExPRg": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-truck",
+            "mobile_icon_width": 32,
+            "icon_width": 32,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "{{ metaobjects.usp_features[\"gratis-levering-til-pakkeshop\"].title.value }}",
+            "content": "<p>{{ metaobjects.usp_features[\"gratis-levering-til-pakkeshop\"].text.value }}</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_YKAere",
+        "item_Cfq8bh",
+        "item_hExPRg"
+      ],
+      "name": "USP ikoner",
+      "settings": {
+        "full_width": false,
+        "stack_on_mobile": true,
+        "title": "",
+        "heading_tag": "h4",
+        "text_alignment": "center",
+        "icon_spacing": "small",
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "custom_liquid_M4e3aF": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": false,
+        "liquid": "&nbsp;",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "hot_spots_Qtcxht": {
+      "type": "hot-spots",
+      "blocks": {
+        "item_Gtz4HY": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 60,
+            "vertical_position": 55,
+            "horizontal_position_mobile": 65,
+            "vertical_position_mobile": 55,
+            "icon_width": 32,
+            "title": "Usynlig under tøjet",
+            "content": "<p>Glat finish og seamless pasform, der gør den usynlig under dit tøj.</p>"
+          }
+        },
+        "item_TbzaUk": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 42,
+            "vertical_position": 52,
+            "horizontal_position_mobile": 31,
+            "vertical_position_mobile": 52,
+            "icon_width": 32,
+            "title": "Ice-silk overflade",
+            "content": "<p>Silkeblød “ice-silk” overflade, der føles let og behagelig mod huden.</p>"
+          }
+        },
+        "item_r3WxiP": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 45,
+            "vertical_position": 75,
+            "horizontal_position_mobile": 36,
+            "vertical_position_mobile": 70,
+            "icon_width": 32,
+            "title": "Soft Zone",
+            "content": "<p>Indvendig Soft Zone i 100% bomuld for åndbarhed og komfort – camel toe proof.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_Gtz4HY",
+        "item_TbzaUk",
+        "item_r3WxiP"
+      ],
+      "custom_css": [],
+      "name": "Hot spots",
+      "settings": {
+        "full_width": true,
+        "image": "shopify://shop_images/Untitled_design_16.jpg",
+        "mobile_image": "shopify://shop_images/Untitled_design_17.jpg",
+        "title": "Detaljerne der gør forskellen",
+        "content": "<p>Tryk på punkterne og se, hvad der gør NoShow usynlig under tøjet – og behagelig hele dagen.</p>",
+        "button_text": "",
+        "button_url": "",
+        "desktop_text_position": "place-self-start-end text-end",
+        "image_background": "rgba(0,0,0,0)",
+        "image_background_gradient": "",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "overlay_text_color": "#ffffff",
+        "overlay_button_background": "",
+        "overlay_button_text_color": "",
+        "hot_spot_dot_background": "#e3b9c9",
+        "hot_spot_dot_text_color": "#000000",
+        "hot_spot_content_background": "#ffffff",
+        "hot_spot_content_text_color": "#000000",
+        "hot_spot_content_opacity": 90,
+        "hot_spot_content_blur_radius": 3
+      }
+    },
+    "impact_text_dEyPBR": {
+      "type": "impact-text",
+      "blocks": {
+        "item_6NLHKD": {
+          "type": "item",
+          "settings": {
+            "title": "76%",
+            "subheading": "Nylon",
+            "content": "<p>Giver styrke, holdbarhed og en glat overflade.</p>",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": true,
+            "animate_impact_text_duration": 2
+          }
+        },
+        "item_rBcKX6": {
+          "type": "item",
+          "settings": {
+            "title": "24%",
+            "subheading": "Elastan",
+            "content": "<p>Tilfører ekstra stretch, så trussen tilpasser sig din krop.</p>",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": true,
+            "animate_impact_text_duration": 2
+          }
+        },
+        "item_wcXKJz": {
+          "type": "item",
+          "settings": {
+            "title": "100%",
+            "subheading": "Bomuld",
+            "content": "<p>Soft Zone indlæg af bomuld – åndbar og hygiejnisk komfort hele dagen.</p>",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": true,
+            "animate_impact_text_duration": 2
+          }
+        }
+      },
+      "block_order": [
+        "item_6NLHKD",
+        "item_rBcKX6",
+        "item_wcXKJz"
+      ],
+      "name": "Impact text",
+      "settings": {
+        "full_width": true,
+        "stack_mobile": true,
+        "text_alignment": "center",
+        "impact_text_style": "fill",
+        "text_divider": "line",
+        "impact_text_size_ratio": 1,
+        "background": "",
+        "background_gradient": "",
+        "heading_text_color": "",
+        "heading_gradient": "linear-gradient(0deg, rgba(178, 138, 148, 1) 11%, rgba(233, 201, 205, 1) 99%)",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
+    "before_after_image_dmBjVy": {
+      "type": "before-after-image",
+      "name": "Before/after image",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Én forskel, du ikke kan overse",
+        "content": "<p>Det her er ikke redigering. Ikke bedre lys.<br/>Det er bare forskellen på almindelige trusser – og LOCKTOWN NoShow.</p><p>Træning, hverdag eller fest – de sidder, som de skal. Ingen justeringer. Ingen distraktioner.</p>",
+        "before_image": "shopify://shop_images/new-front-before-mobile.jpg",
+        "after_image": "shopify://shop_images/new-front-after-mobile.jpg",
+        "expand_image": false,
+        "text_position": "start",
+        "before_after_text_position": "top",
+        "before_text": "Uden NoShow",
+        "after_text": "Med NoShow",
+        "drag_initial_position": 60,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "before_text_color": "#000000",
+        "after_text_color": "#000000",
+        "drag_cursor_background": "#ffffff",
+        "drag_cursor_color": "#000000"
+      }
+    },
+    "before_after_image_QJKmyX": {
+      "type": "before-after-image",
+      "disabled": true,
+      "name": "Before/after image",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "before_image": "shopify://shop_images/back-new-before.jpg",
+        "after_image": "shopify://shop_images/back-new-after.jpg",
+        "expand_image": false,
+        "text_position": "start",
+        "before_after_text_position": "top",
+        "before_text": "Uden NoShow",
+        "after_text": "Med NoShow",
+        "drag_initial_position": 60,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "before_text_color": "#000000",
+        "after_text_color": "#000000",
+        "drag_cursor_background": "#ffffff",
+        "drag_cursor_color": "#000000"
+      }
+    },
+    "testimonials_BQC8Uq": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_4jHpma": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 5,
+            "author": "{{ metaobjects.testimonial_static.sarah.author.value }}",
+            "title": "{{ metaobjects.testimonial_static.sarah.heading.value }}",
+            "content": "{{ metaobjects.testimonial_static.sarah.content | metafield_tag }}"
+          }
+        },
+        "testimonial_AAaBFY": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 5,
+            "author": "{{ metaobjects.testimonial_static[\"malene-b\"].author.value }}",
+            "title": "{{ metaobjects.testimonial_static[\"malene-b\"].heading.value }}",
+            "content": "{{ metaobjects.testimonial_static[\"malene-b\"].content | metafield_tag }}"
+          }
+        },
+        "testimonial_TWVaCm": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 5,
+            "author": "{{ metaobjects.testimonial_static[\"tinna-s\"].author.value }}",
+            "title": "{{ metaobjects.testimonial_static[\"tinna-s\"].heading.value }}",
+            "content": "{{ metaobjects.testimonial_static[\"tinna-s\"].content | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_4jHpma",
+        "testimonial_AAaBFY",
+        "testimonial_TWVaCm"
+      ],
+      "name": "Testimonials",
+      "settings": {
+        "full_width": true,
+        "stack_testimonials": true,
+        "subheading": "",
+        "title": "Det siger kunderne",
+        "content": "<p><strong>{{ metaobjects.announcement_bar_item[\"-over-1-000-tilfredse-kunder\"].text.value }}</strong></p>",
+        "link_url": "shopify://pages/det-siger-vores-kunder",
+        "link_text": "Læs alle anmeldelser",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "testimonial_card_background": "",
+        "testimonial_card_text_color": ""
+      }
+    },
+    "multiple_images_with_text_cYWzRc": {
+      "type": "multiple-images-with-text",
+      "blocks": {
+        "item_HLeFL8": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/processed-7900E1A7-49D4-4742-963A-9D407565C8C6_ratio_1-1.jpg",
+            "image_rotation_degrees": -2,
+            "subheading": "",
+            "title": "Skabt sammen med kvinder",
+            "content": "<p>LOCKTOWN blev skabt sammen med et fællesskab af kvinder, der testede og gav feedback undervejs.</p><p>I dag har 1000+ kunder allerede prøvet vores trusser – og du kan læse nogle af deres oplevelser her.</p>",
+            "button_url": "shopify://pages/det-siger-vores-kunder",
+            "button_text": "Læs anmeldelser"
+          }
+        },
+        "item_XQbTQn": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/28C9FB03-8B3D-4137-8061-59F80CFADA50_ratio_1-1.jpg",
+            "image_rotation_degrees": 1.5,
+            "subheading": "",
+            "title": "",
+            "content": "",
+            "button_url": "",
+            "button_text": ""
+          }
+        },
+        "item_iWT4x7": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/D3C5159B-3292-4D1D-9F2E-A2AF17A30F9B_6d29a462-b933-4d6b-8d17-9c6afd03219e.jpg",
+            "image_rotation_degrees": 1.5,
+            "subheading": "",
+            "title": "",
+            "content": "",
+            "button_url": "",
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_HLeFL8",
+        "item_XQbTQn",
+        "item_iWT4x7"
+      ],
+      "disabled": true,
+      "name": "Skabt sammen med kvinder som dig",
+      "settings": {
+        "full_width": false,
+        "images_layout": "collage",
+        "collage_images_alignment": "middle",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "multi_column_BkKdrF",
+    "image_with_text_overlay_hnnQ6r",
+    "slideshow_H64wgj",
+    "featured_collection_DbnQn3",
+    "text_with_icons_Vk6nB8",
+    "custom_liquid_M4e3aF",
+    "hot_spots_Qtcxht",
+    "impact_text_dEyPBR",
+    "before_after_image_dmBjVy",
+    "before_after_image_QJKmyX",
+    "testimonials_BQC8Uq",
+    "multiple_images_with_text_cYWzRc"
+  ]
+}

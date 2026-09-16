@@ -1,0 +1,43 @@
+{% stylesheet %}
+  .lktn-cart-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+  }
+{% endstylesheet %}
+
+{% javascript %}
+  function renderWrapper() {
+    if (document.querySelector('.lktn-cart-wrapper')) {
+      return;
+    }
+
+    var drawerItems = document.getElementsByClassName('cart-drawer__line-items')[0];
+    if (!drawerItems) return;
+
+    var wrapperElement = document.createElement('div');
+    wrapperElement.classList.add('lktn-cart-wrapper');
+    drawerItems.before(wrapperElement);
+
+    window._lktnCartWrapper = wrapperElement;
+    window.dispatchEvent(
+      new CustomEvent('lktn:cart-wrapper-ready', {
+        detail: { wrapper: wrapperElement },
+      })
+    );
+  }
+
+  document.addEventListener('DOMContentLoaded', renderWrapper);
+  window.addEventListener('cart:change', renderWrapper);
+  window.addEventListener('cart:refresh', renderWrapper);
+
+  const cartDrawer = document.querySelector('cart-drawer');
+  if (cartDrawer) {
+    const observer = new MutationObserver(function () {
+      if (!document.querySelector('.lktn-cart-wrapper')) {
+        renderWrapper();
+      }
+    });
+    observer.observe(cartDrawer, { childList: true, subtree: true });
+  }
+{% endjavascript %}

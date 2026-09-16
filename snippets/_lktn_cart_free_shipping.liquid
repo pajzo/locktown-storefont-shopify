@@ -1,0 +1,69 @@
+<div style="display: none">
+  <div id="lktn-shipping-line"></div>
+</div>
+
+{% stylesheet %}
+  .lktn-shipping-line {
+    font-size: var(--text-base);
+    border-radius: var(--rounded);
+    padding: var(--spacing-2) var(--spacing-3);
+  }
+
+  .lktn-cart-freeshipping-in-drawer {
+    order: 1;
+  }
+
+  .lktn-shipping-line.not-done {
+    color: rgb(var(--warning-text));
+    background: rgb(var(--warning-background));
+  }
+
+  .lktn-shipping-line.done {
+    color: rgb(var(--success-text));
+    background: rgb(var(--success-background));
+  }
+{% endstylesheet %}
+
+{% javascript %}
+  var FREE_SHIPPING_THRESHOLD = 39500;
+
+  function renderProgress(wrapperElement) {
+    fetch('/cart.js')
+      .then(function (r) {
+        return r.json();
+      })
+      .then(function (cart) {
+        var totalPrice = cart.total_price;
+        //console.log('lktn free shipping', totalPrice);
+
+        var shippingEl = document.getElementById('lktn-shipping-line');
+        if (totalPrice >= FREE_SHIPPING_THRESHOLD) {
+          shippingEl.innerHTML = '✓ Fri fragt til pakkeshop';
+          shippingEl.className = 'lktn-shipping-line done';
+        } else {
+          var missing = ((FREE_SHIPPING_THRESHOLD - totalPrice) / 100).toFixed(0);
+          shippingEl.innerHTML = '🚚 Mangler <strong>' + missing + ' kr</strong> til fri fragt (pakkeshop)';
+          shippingEl.className = 'lktn-shipping-line not-done';
+        }
+
+        var old = document.getElementsByClassName('lktn-cart-freeshipping-in-drawer');
+        while (old.length > 0) old[0].remove();
+
+        var shippingInDrawer = shippingEl.cloneNode(true);
+        shippingInDrawer.removeAttribute('id');
+        shippingInDrawer.classList.add('lktn-cart-freeshipping-in-drawer');
+        wrapperElement.appendChild(shippingInDrawer);
+      })
+      .catch(function () {});
+  }
+
+  window.addEventListener('lktn:cart-wrapper-ready', function(e) {
+    renderProgress(e.detail.wrapper);
+  });
+
+  // Fallback hvis event allerede er fyret
+  if (window._lktnCartWrapper) {
+    renderProgress(window._lktnCartWrapper);
+  }  
+
+{% endjavascript %}

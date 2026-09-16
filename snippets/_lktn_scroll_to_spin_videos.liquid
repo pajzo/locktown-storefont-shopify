@@ -1,0 +1,20 @@
+<div class="scroll-to-spin-wrapper">
+  <a
+    href="#"
+    class="scroll-to-spin-video-link"
+    onclick="document.querySelector('main').querySelectorAll('section')[1].scrollIntoView({ behavior: 'smooth', block: 'start' })"
+    >Se den på flere kroppe ↓</a
+  >
+</div>
+
+{% stylesheet %}
+  .scroll-to-spin-wrapper {
+      margin-top: -10px;
+  }
+
+    .scroll-to-spin-video-link {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      font-weight: 400;
+    }
+{% endstylesheet %}

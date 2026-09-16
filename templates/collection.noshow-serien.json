@@ -1,0 +1,340 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "collection-banner",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": true,
+        "enable_parallax": false,
+        "show_collection_title": true,
+        "show_collection_description": true,
+        "show_collection_image": true,
+        "collection_title_size": "h0",
+        "image_size": "sm",
+        "image": "shopify://shop_images/NoShow_Thong_Mid_Black_XS_2_1.jpg",
+        "mobile_text_position": "place-self-center-start text-start",
+        "desktop_text_position": "sm:place-self-center-start sm:text-start",
+        "featured_product": "",
+        "featured_product_heading": "Bestseller",
+        "text_color": "#ffffff",
+        "overlay_color": "#111111",
+        "overlay_opacity": 30
+      }
+    },
+    "video_8g3rDT": {
+      "type": "video",
+      "blocks": {
+        "play_BwXV9x": {
+          "type": "play",
+          "settings": {}
+        },
+        "heading_jC8LBn": {
+          "type": "heading",
+          "settings": {
+            "text": "{{ collection.title }}",
+            "heading_tag": "h0"
+          }
+        },
+        "richtext_8N9XGg": {
+          "type": "richtext",
+          "settings": {
+            "content": "{{ collection.description }}"
+          }
+        }
+      },
+      "block_order": [
+        "play_BwXV9x",
+        "heading_jC8LBn",
+        "richtext_8N9XGg"
+      ],
+      "disabled": true,
+      "name": "Video",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": true,
+        "autoplay": true,
+        "video_size": "sm",
+        "video": "shopify://files/videos/NoShow Thong Mid Black M.mp4",
+        "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "custom_liquid_CC93Gy": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "name": "LKTN Bundle Badges",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "{% render '_lktn-bundle-badges' %}",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "custom_liquid_YwdGYg": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "name": "LKTN Bundle Tooltip",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "{% render '_lktn-bundle-info-tooltip' %}",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "blocks": {
+        "promotion_image_xymkfw": {
+          "type": "promotion_image",
+          "disabled": true,
+          "settings": {
+            "position": 4,
+            "column_span": "1",
+            "image": "shopify://shop_images/Generated_with_Kive.ai_-_kive-image_8.png",
+            "title": "Fyld skuffen",
+            "content": "<p>Køb 3+ par og spar – gratis fragt.<br/>Mix & Match frit.</p>",
+            "link_url": "",
+            "link_text": "",
+            "heading_tag": "h4",
+            "text_position": "place-self-end-start text-start",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "promotion_image_xymkfw"
+      ],
+      "settings": {
+        "products_per_page": 24,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "filter_layout": "horizontal",
+        "show_sort_by": true,
+        "show_filters": true,
+        "show_filter_group_name": true,
+        "show_filter_values_count": true,
+        "open_first_filter_group": true
+      }
+    },
+    "text_with_icons_6r4khq": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item_GaU9tM": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-target",
+            "mobile_icon_width": 32,
+            "icon_width": 32,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "{{ metaobjects.usp_features[\"camel-toe-proof\"].title.value }}",
+            "content": "<p>{{ metaobjects.usp_features[\"camel-toe-proof\"].text.value }}</p>"
+          }
+        },
+        "item_bi7Ywr": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-recycle",
+            "mobile_icon_width": 32,
+            "icon_width": 32,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "{{ metaobjects.usp_features[\"gratis-ombytning-90-dage\"].title.value }}",
+            "content": "<p>{{ metaobjects.usp_features[\"gratis-ombytning-90-dage\"].text.value }}</p>"
+          }
+        },
+        "item_aX7WxP": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-truck",
+            "mobile_icon_width": 32,
+            "icon_width": 32,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "{{ metaobjects.usp_features[\"gratis-levering-til-pakkeshop\"].title.value }}",
+            "content": "<p>{{ metaobjects.usp_features[\"gratis-levering-til-pakkeshop\"].text.value }}</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_GaU9tM",
+        "item_bi7Ywr",
+        "item_aX7WxP"
+      ],
+      "name": "USP ikoner",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": true,
+        "title": "",
+        "heading_tag": "h4",
+        "text_alignment": "center",
+        "icon_spacing": "small",
+        "background": "{{ metaobjects.locktown_colors[\"baggrund-subtil\"].color.value }}",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "image_with_text_overlay_cN7Jxr": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_9WRNYm": {
+          "type": "subheading",
+          "settings": {
+            "text": "NoShow-serien"
+          }
+        },
+        "heading_7qMG4d": {
+          "type": "heading",
+          "settings": {
+            "text": "Én idé.",
+            "heading_tag": "h2"
+          }
+        },
+        "heading_FckeaQ": {
+          "type": "heading",
+          "settings": {
+            "text": "Fire pasformer.",
+            "heading_tag": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_9WRNYm",
+        "heading_7qMG4d",
+        "heading_FckeaQ"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/Locktown_26.06.24_E-Com0417.jpg",
+        "mobile_image": "shopify://shop_images/Locktown_26.06.24_E-Com0449.jpg",
+        "mobile_text_position": "place-self-end-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "before_after_image_axMtmh": {
+      "type": "before-after-image",
+      "name": "Before/after image",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Én forskel, du ikke kan overse",
+        "content": "<p>Det her er ikke redigering. Ikke bedre lys.<br/>Det er bare forskellen på almindelige trusser – og LOCKTOWN NoShow.</p><p>Træning, hverdag eller fest – de sidder, som de skal. Ingen justeringer. Ingen distraktioner.</p>",
+        "before_image": "shopify://shop_images/new-front-before-mobile.jpg",
+        "after_image": "shopify://shop_images/new-front-after-mobile.jpg",
+        "expand_image": false,
+        "text_position": "start",
+        "before_after_text_position": "top",
+        "before_text": "Uden NoShow",
+        "after_text": "Med NoShow",
+        "drag_initial_position": 60,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "before_text_color": "{{ metaobjects.locktown_colors.noir.color.value }}",
+        "after_text_color": "{{ metaobjects.locktown_colors.noir.color.value }}",
+        "drag_cursor_background": "#ffffff",
+        "drag_cursor_color": "{{ metaobjects.locktown_colors.noir.color.value }}"
+      }
+    },
+    "testimonials_3CckXa": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_xDbJVq": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 5,
+            "author": "{{ metaobjects.testimonial_static.sarah.author.value }}",
+            "title": "{{ metaobjects.testimonial_static.sarah.heading.value }}",
+            "content": "{{ metaobjects.testimonial_static.sarah.content | metafield_tag }}"
+          }
+        },
+        "testimonial_b8Jidj": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 5,
+            "author": "{{ metaobjects.testimonial_static[\"malene-b\"].author.value }}",
+            "title": "{{ metaobjects.testimonial_static[\"malene-b\"].heading.value }}",
+            "content": "{{ metaobjects.testimonial_static[\"malene-b\"].content | metafield_tag }}"
+          }
+        },
+        "testimonial_RQAjaf": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 5,
+            "author": "{{ metaobjects.testimonial_static[\"tinna-s\"].author.value }}",
+            "title": "{{ metaobjects.testimonial_static[\"tinna-s\"].heading.value }}",
+            "content": "{{ metaobjects.testimonial_static[\"tinna-s\"].content | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_xDbJVq",
+        "testimonial_b8Jidj",
+        "testimonial_RQAjaf"
+      ],
+      "name": "Testimonials",
+      "settings": {
+        "full_width": true,
+        "stack_testimonials": true,
+        "subheading": "",
+        "title": "Det siger kunderne",
+        "content": "<p><strong>{{ metaobjects.announcement_bar_item[\"-over-1-000-tilfredse-kunder\"].text.value }}</strong></p>",
+        "link_url": "shopify://pages/det-siger-vores-kunder",
+        "link_text": "Læs alle anmeldelser",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "testimonial_card_background": "{{ metaobjects.locktown_colors[\"baggrund-subtil\"].color.value }}",
+        "testimonial_card_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "video_8g3rDT",
+    "custom_liquid_CC93Gy",
+    "custom_liquid_YwdGYg",
+    "main",
+    "text_with_icons_6r4khq",
+    "image_with_text_overlay_cN7Jxr",
+    "before_after_image_axMtmh",
+    "testimonials_3CckXa"
+  ]
+}

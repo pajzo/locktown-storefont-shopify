@@ -1,0 +1,1237 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_with_text_overlay_RLRycn": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_zW4yy9": {
+          "type": "heading",
+          "settings": {
+            "text": "Trusser du ikke skal tænke over ♡",
+            "heading_tag": "h2"
+          }
+        },
+        "subheading_fVTPFJ": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Silkebløde, seamless og skabt til at følge dine bevægelser - hele dagen."
+          }
+        },
+        "richtext_tEPnAd": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Silkebløde og seamless <br/>– camel toe proof og uden synlige kanter.</p>"
+          }
+        },
+        "subheading_XjjF4M": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "1000+ kunder • 4000+ trusser solgt"
+          }
+        },
+        "button_Bic4XG": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "lg",
+            "text": "Oplev NoShow-serien",
+            "url": "shopify://pages/noshow",
+            "background": "#ffffff",
+            "text_color": ""
+          }
+        },
+        "button_XYggfF": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "style": "fill",
+            "size": "lg",
+            "text": "Find din pasform",
+            "url": "",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_zW4yy9",
+        "subheading_fVTPFJ",
+        "richtext_tEPnAd",
+        "subheading_XjjF4M",
+        "button_Bic4XG",
+        "button_XYggfF"
+      ],
+      "disabled": true,
+      "name": "Hero",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": true,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/Hero_Desktop_Dec2025-2.png",
+        "mobile_image": "shopify://shop_images/Hero_Mobile_Dec2025-2.png",
+        "mobile_text_position": "place-self-end-center text-center",
+        "desktop_text_position": "sm:place-self-center-start sm:text-start",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 15
+      }
+    },
+    "image_with_text_overlay_eBHmLm": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_3NgXjY": {
+          "type": "heading",
+          "settings": {
+            "text": "Trusser, du ikke skal tænke over",
+            "heading_tag": "h4"
+          }
+        },
+        "button_PbtXV4": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "lg",
+            "text": "Oplev NoShow-serien",
+            "url": "shopify://pages/noshow",
+            "background": "#ffffff",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_3NgXjY",
+        "button_PbtXV4"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/Untitled_design_15.jpg",
+        "mobile_image": "shopify://shop_images/Untitled_design_14.jpg",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center-start sm:text-start",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "slideshow_zqtCfa": {
+      "type": "slideshow",
+      "blocks": {
+        "image_tWdenq": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Hero_Desktop_Dec2025-2.png",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-end-center text-center",
+            "desktop_text_position": "sm:place-self-center-start sm:text-start",
+            "subheading": "",
+            "title": "Trusser du ikke skal tænke over ♡",
+            "heading_tag": "h4",
+            "button_text": "Oplev NoShow-serien",
+            "button_link": "shopify://pages/noshow",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "image_myyq4p": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/high-active-bluely.png",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center-start sm:text-start",
+            "subheading": "",
+            "title": "Trusser, du ikke skal tænke over",
+            "heading_tag": "h4",
+            "button_text": "Oplev NoShow-serien",
+            "button_link": "shopify://pages/noshow",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "image_mmjK4N": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design_9.jpg",
+            "mobile_image": "shopify://shop_images/Untitled_design_12.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center-end sm:text-end",
+            "subheading": "",
+            "title": "Trusser, du ikke skal tænke over",
+            "heading_tag": "h4",
+            "button_text": "Oplev NoShow-serien",
+            "button_link": "shopify://pages/noshow",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_tWdenq",
+        "image_myyq4p",
+        "image_mmjK4N"
+      ],
+      "disabled": true,
+      "name": "Slideshow",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "show_initial_transition": false,
+        "image_size": "auto",
+        "controls_type": "numbers",
+        "transition_type": "fade_with_text",
+        "autoplay": true,
+        "cycle_speed": 6,
+        "background": "#f2f2f2",
+        "background_gradient": ""
+      }
+    },
+    "section-3": {
+      "type": "scrolling-text",
+      "disabled": true,
+      "name": "Scroll Shop nu",
+      "settings": {
+        "full_width": true,
+        "text": "Shop nu – oplev komforten i morgen ♥︎",
+        "text_size": "xsmall",
+        "text_style": "fill",
+        "scrolling_mode": "auto",
+        "scrolling_speed": 10,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "text_gradient": "linear-gradient(90deg, rgba(178, 138, 148, 1) 11%, rgba(233, 201, 205, 1) 99%)"
+      }
+    },
+    "text_with_icons_mM63pX": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item_JA3tF4": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-star",
+            "mobile_icon_width": 24,
+            "icon_width": 24,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "{{ metaobjects.usp_features[\"dansk-design\"].title.value }}",
+            "content": "<p>{{ metaobjects.usp_features[\"dansk-design\"].text.value }}</p>"
+          }
+        },
+        "item_CPfcMF": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-love",
+            "mobile_icon_width": 24,
+            "icon_width": 24,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "{{ metaobjects.usp_features[\"tre-pasformer\"].title.value }}",
+            "content": "<p>{{ metaobjects.usp_features[\"tre-pasformer\"].text.value }}</p>"
+          }
+        },
+        "item_MdaMGh": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-leaf",
+            "mobile_icon_width": 24,
+            "icon_width": 24,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "{{ metaobjects.usp_features[\"seamless-og-andbart\"].title.value }}",
+            "content": "<p>{{ metaobjects.usp_features[\"seamless-og-andbart\"].text.value }}</p>"
+          }
+        },
+        "item_pRL8RH": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "icon": "picto-box",
+            "mobile_icon_width": 24,
+            "icon_width": 24,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "{{ metaobjects.usp_features[\"hurtig-levering\"].title.value }}",
+            "content": "<p>{{ metaobjects.usp_features[\"hurtig-levering\"].text.value }}</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_JA3tF4",
+        "item_CPfcMF",
+        "item_MdaMGh",
+        "item_pRL8RH"
+      ],
+      "disabled": true,
+      "name": "USP ikoner",
+      "settings": {
+        "full_width": false,
+        "stack_on_mobile": true,
+        "title": "",
+        "heading_tag": "h4",
+        "text_alignment": "center",
+        "icon_spacing": "small",
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "text_with_icons_R8jigy": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item_rRaCTa": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-target",
+            "mobile_icon_width": 32,
+            "icon_width": 32,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "{{ metaobjects.usp_features[\"camel-toe-proof\"].title.value }}",
+            "content": "<p>{{ metaobjects.usp_features[\"camel-toe-proof\"].text.value }}</p>"
+          }
+        },
+        "item_WnEnV8": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-recycle",
+            "mobile_icon_width": 32,
+            "icon_width": 32,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "{{ metaobjects.usp_features[\"gratis-ombytning-90-dage\"].title.value }}",
+            "content": "<p>{{ metaobjects.usp_features[\"gratis-ombytning-90-dage\"].text.value }}</p>"
+          }
+        },
+        "item_83fJWP": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-truck",
+            "mobile_icon_width": 32,
+            "icon_width": 32,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "{{ metaobjects.usp_features[\"gratis-levering-til-pakkeshop\"].title.value }}",
+            "content": "<p>{{ metaobjects.usp_features[\"gratis-levering-til-pakkeshop\"].text.value }}</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_rRaCTa",
+        "item_WnEnV8",
+        "item_83fJWP"
+      ],
+      "name": "USP ikoner",
+      "settings": {
+        "full_width": false,
+        "stack_on_mobile": true,
+        "title": "",
+        "heading_tag": "h4",
+        "text_alignment": "center",
+        "icon_spacing": "small",
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "featured_collection_HDWhNT": {
+      "type": "featured-collection",
+      "disabled": true,
+      "name": "Featured collection",
+      "settings": {
+        "collection": "",
+        "products": [
+          "noshow-thong-high-sort",
+          "noshow-thong-mid-sort",
+          "noshow-thong-low-sort",
+          "gavekort"
+        ],
+        "full_width": false,
+        "stack_products": false,
+        "show_progress_bar": false,
+        "products_count": 6,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "subheading": "",
+        "title": "Populære produkter",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "featured_collection_4zFhxy": {
+      "type": "featured-collection",
+      "name": "NoShow-serien collection",
+      "settings": {
+        "collection": "noshow-thong",
+        "products": [],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_count": 6,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
+        "subheading": "NoShow-serien",
+        "title": "Én idé. Tre pasformer.",
+        "content": "<p>Silkebløde, seamless og camel toe–proof – vælg din pasform herunder.</p><p>Køb flere og spar mere - du kan frit blande på tværs af modeller, størrelser og farver.</p><ul><li>3 par til 349 kr.</li><li>6 par til 499 kr.</li><li>9 par til 699 kr.</li></ul>",
+        "link_url": "shopify://pages/noshow",
+        "link_text": "",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "multi_column_hH9A7P": {
+      "type": "multi-column",
+      "blocks": {
+        "item_KE3Qma": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/NS1_NOV2025-high-black-front.jpg",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "High Waist",
+            "heading_tag": "h4",
+            "content": "<p>Ekstra dækning og en smooth silhuet, perfekt under kjoler og højtaljede styles.</p>",
+            "link_url": "shopify://products/noshow-thong-high-sort",
+            "link_text": "Oplev High Waist",
+            "link_style": "button"
+          }
+        },
+        "item_X3JxW4": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/NS1_NOV2025-mid-black-front.jpg",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Mid Waist",
+            "heading_tag": "h4",
+            "content": "<p>Den klassiske hverdags-pasform, der fungerer til både jeans og træningstights.</p>",
+            "link_url": "shopify://products/noshow-thong-mid-sort",
+            "link_text": "Oplev Mid Waist",
+            "link_style": "button"
+          }
+        },
+        "item_hRaCPX": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/NS1_NOV2025-low-black-front.jpg",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Low Waist",
+            "heading_tag": "h4",
+            "content": "<p>Let og diskret komfort til lavtaljede styles, når du vil føle dig fri uden synlige kanter.</p>",
+            "link_url": "shopify://products/noshow-thong-low-sort",
+            "link_text": "Oplev Low Waist",
+            "link_style": "button"
+          }
+        },
+        "item_ygJnQR": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "show_controls": false,
+            "column_size": "4",
+            "title": "Breif",
+            "heading_tag": "h4",
+            "content": "<p>Kommer snart...</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_KE3Qma",
+        "item_X3JxW4",
+        "item_hRaCPX",
+        "item_ygJnQR"
+      ],
+      "disabled": true,
+      "name": "Find din perfekte pasform",
+      "settings": {
+        "full_width": false,
+        "stack_on_mobile": false,
+        "gap": "x-large",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "Find din perfekte pasform",
+        "content": "",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "ss_testimonial_12_4yJWxi": {
+      "type": "ss-testimonial-12",
+      "blocks": {
+        "slide_7LkgyQ": {
+          "type": "slide",
+          "settings": {
+            "media_style": "none",
+            "video_url": "",
+            "controls": false,
+            "stars_count": 5,
+            "text": "<p>Text</p>",
+            "author": "<p>Author</p>"
+          }
+        }
+      },
+      "block_order": [
+        "slide_7LkgyQ"
+      ],
+      "disabled": true,
+      "name": "SS - Testimonials #12",
+      "settings": {
+        "heading": "<h2>Loved by everyone, everywhere. Don't miss out.</h2>",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 30,
+        "heading_size_mobile": 22,
+        "heading_height": 130,
+        "heading_align": "center",
+        "heading_align_mobile": "center",
+        "sub_heading": "",
+        "sub_heading_custom": false,
+        "sub_heading_font": "josefin_sans_n4",
+        "sub_heading_size": 30,
+        "sub_heading_size_mobile": 22,
+        "sub_heading_height": 150,
+        "sub_heading_mt": 12,
+        "sub_heading_align": "center",
+        "sub_heading_align_mobile": "center",
+        "slider_view": 5,
+        "slider_view_mobile": 1.3,
+        "slider_gap": 28,
+        "slider_gap_mobile": 20,
+        "slider_mt": 20,
+        "autoplay": false,
+        "autoplay_delay": 5,
+        "card_padding_vertical": 20,
+        "card_padding_vertical_mobile": 16,
+        "card_padding_horizontal": 20,
+        "card_padding_horizontal_mobile": 16,
+        "card_radius": 20,
+        "card_border_thickness": 1,
+        "card_shadow": false,
+        "media_radius": 20,
+        "media_border_thickness": 0,
+        "media_ratio": "square",
+        "media_ratio_mobile": "square",
+        "content_padding_vertical": 0,
+        "content_padding_vertical_mobile": 0,
+        "content_padding_horizontal": 0,
+        "content_padding_horizontal_mobile": 0,
+        "hide_content": false,
+        "stars_size": 16,
+        "stars_mt": 12,
+        "stars_align": "center",
+        "stars_align_mobile": "center",
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 16,
+        "text_size_mobile": 16,
+        "text_height": 130,
+        "text_mt": 12,
+        "text_align": "center",
+        "text_align_mobile": "center",
+        "author_custom": false,
+        "author_font": "josefin_sans_n4",
+        "author_size": 14,
+        "author_size_mobile": 14,
+        "author_height": 130,
+        "author_mt": 12,
+        "author_align": "center",
+        "author_align_mobile": "center",
+        "navigation_mt": 40,
+        "navigation_gap": 20,
+        "navigation_align": "center",
+        "navigation_align_mobile": "center",
+        "arrow_size": 50,
+        "arrow_size_mobile": 50,
+        "arrow_show_desktop": true,
+        "arrow_show_mobile": false,
+        "dots_size": 10,
+        "dots_size_mobile": 10,
+        "dots_show_desktop": false,
+        "dots_show_mobile": true,
+        "btn_icon_size": 50,
+        "btn_icon_size_mobile": 40,
+        "card_bg_color": "#ffffff",
+        "card_bg_gradient": "",
+        "card_border_color": "#dedbc4",
+        "media_border_color": "#121212",
+        "stars_color": "#ffb74a",
+        "text_color": "#323232",
+        "author_color": "#323232",
+        "video_icon_bg_color": "#ffffff",
+        "video_icon_color": "#121212",
+        "arrow_color": "#837c5c",
+        "arrow_hover_color": "#837c5c",
+        "dots_color": "#837c5c",
+        "heading_color": "#837c5c",
+        "sub_heading_color": "#837c5c",
+        "background_color": "#f6f5f2",
+        "background_gradient": "",
+        "border_color": "#121212",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": true,
+        "content_width": 1200,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    },
+    "testimonials_pybBwU": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_tdqY6d": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 4,
+            "author": "John S.",
+            "title": "Testimonial 1",
+            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
+          }
+        },
+        "testimonial_4FYBRC": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 5,
+            "author": "Mary U.",
+            "title": "Testimonial 2",
+            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
+          }
+        },
+        "testimonial_zL9HDw": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 4,
+            "author": "Joshua A.",
+            "title": "Testimonial 3",
+            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_tdqY6d",
+        "testimonial_4FYBRC",
+        "testimonial_zL9HDw"
+      ],
+      "disabled": true,
+      "name": "Testimonials",
+      "settings": {
+        "full_width": true,
+        "stack_testimonials": false,
+        "subheading": "",
+        "title": "Testimonials",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "testimonial_card_background": "",
+        "testimonial_card_text_color": ""
+      }
+    },
+    "17649638542f0cadba": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_cards_carousel_nhfgX4": {
+          "type": "shopify://apps/judge-me-reviews/blocks/cards_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "show_sample_reviews": false,
+            "reviews_selection": "featured_reviews",
+            "products": [],
+            "star_rating": "5_star",
+            "show_review_media": false,
+            "display_order": "media_first",
+            "no_image_fallback": "product_image",
+            "max_reviews": 10,
+            "review_length": "medium",
+            "text_size": "small",
+            "image_ratio": "1",
+            "reviews_shown": 5,
+            "show_reviewer_name": true,
+            "show_product_name": false,
+            "hide_arrows_mobile": false,
+            "arrows_position": "sides",
+            "max_width": 1400,
+            "corner_styling": "round",
+            "header_text_color": "#000000",
+            "text_color": "#000000",
+            "card_color": "#f9f9f9",
+            "stars_color": "",
+            "arrows_color": "#000000",
+            "transition_speed": 5,
+            "header_text": "",
+            "show_average_rating": true
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_cards_carousel_nhfgX4"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "name": "Review Judge.me ",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "testimonials_AcEheF": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_J7mHFn": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 5,
+            "author": "{{ metaobjects.testimonial_static.sarah.author.value }}",
+            "title": "{{ metaobjects.testimonial_static.sarah.heading.value }}",
+            "content": "{{ metaobjects.testimonial_static.sarah.content | metafield_tag }}"
+          }
+        },
+        "testimonial_8FijG6": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 5,
+            "author": "{{ metaobjects.testimonial_static[\"malene-b\"].author.value }}",
+            "title": "{{ metaobjects.testimonial_static[\"malene-b\"].heading.value }}",
+            "content": "{{ metaobjects.testimonial_static[\"malene-b\"].content | metafield_tag }}"
+          }
+        },
+        "testimonial_F46AME": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 5,
+            "author": "{{ metaobjects.testimonial_static[\"tinna-s\"].author.value }}",
+            "title": "{{ metaobjects.testimonial_static[\"tinna-s\"].heading.value }}",
+            "content": "{{ metaobjects.testimonial_static[\"tinna-s\"].content | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_J7mHFn",
+        "testimonial_8FijG6",
+        "testimonial_F46AME"
+      ],
+      "name": "Testimonials",
+      "settings": {
+        "full_width": false,
+        "stack_testimonials": true,
+        "subheading": "",
+        "title": "Det siger kunderne",
+        "content": "<p><strong>1000+ kunder • 4000+ trusser solgt</strong></p>",
+        "link_url": "shopify://pages/det-siger-vores-kunder",
+        "link_text": "Læs alle anmeldelser",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "testimonial_card_background": "",
+        "testimonial_card_text_color": ""
+      }
+    },
+    "multiple_images_with_text_C8QGV7": {
+      "type": "multiple-images-with-text",
+      "blocks": {
+        "item_H6Ap49": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/processed-7900E1A7-49D4-4742-963A-9D407565C8C6_ratio_1-1.jpg",
+            "image_rotation_degrees": -2,
+            "subheading": "",
+            "title": "Skabt sammen med kvinder",
+            "content": "<p>LOCKTOWN blev skabt sammen med et fællesskab af kvinder, der testede og gav feedback undervejs.</p><p>I dag har 1000+ kunder allerede prøvet vores trusser – og du kan læse nogle af deres oplevelser her.</p>",
+            "button_url": "shopify://pages/det-siger-vores-kunder",
+            "button_text": "Læs anmeldelser"
+          }
+        },
+        "item_ziwpRk": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/28C9FB03-8B3D-4137-8061-59F80CFADA50_ratio_1-1.jpg",
+            "image_rotation_degrees": 1.5,
+            "subheading": "",
+            "title": "",
+            "content": "",
+            "button_url": "",
+            "button_text": ""
+          }
+        },
+        "item_G9pAAi": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/D3C5159B-3292-4D1D-9F2E-A2AF17A30F9B_6d29a462-b933-4d6b-8d17-9c6afd03219e.jpg",
+            "image_rotation_degrees": 1.5,
+            "subheading": "",
+            "title": "",
+            "content": "",
+            "button_url": "",
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_H6Ap49",
+        "item_ziwpRk",
+        "item_G9pAAi"
+      ],
+      "disabled": true,
+      "name": "Skabt sammen med kvinder som dig",
+      "settings": {
+        "full_width": false,
+        "images_layout": "collage",
+        "collage_images_alignment": "middle",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
+    "section-5": {
+      "type": "featured-collection",
+      "disabled": true,
+      "custom_css": [
+        ".section-header a {display: none;}"
+      ],
+      "name": "NoShow_Collection",
+      "settings": {
+        "collection": "noshow-thong",
+        "products": [],
+        "full_width": false,
+        "stack_products": false,
+        "show_progress_bar": true,
+        "products_count": 3,
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "Find din perfekte NoShow-pasform",
+        "content": "<p>Én idé. Tre løsninger.</p><p>Vores trusser er skabt til kvinder, der vil have både komfort og et look, der bare spiller – fra første skridt til sen aften.<br/><br/>Silkebløde, sømløse og med den dér “second skin”-følelse, du ikke vidste, du manglede. Ingen kanter. Ingen camel toe. Ingen kompromiser.</p><p><strong>Vælg den pasform, der passer dig:</strong></p><p><strong>Low Waist</strong>: diskret frihed til lavtaljede styles.</p><p><strong>Mid Waist</strong>: den klassiske pasform, der fungerer til alt fra jeans til træningstights.</p><p><strong>High Waist</strong>: ekstra dækning og en smooth silhuet under alt fra kjoler til højtaljede styles.</p><p>Fælles for dem alle? De føles som ingenting – og alligevel gør de en kæmpe forskel ♥︎</p>",
+        "link_url": "shopify://collections/all",
+        "link_text": "View all",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "before_after_image_nKXaHL": {
+      "type": "before-after-image",
+      "disabled": true,
+      "name": "Before/after image",
+      "settings": {
+        "full_width": false,
+        "subheading": "",
+        "title": "Én forskel, du ikke kan overse",
+        "content": "<p>Det her er ikke redigering. Ikke bedre lys.<br/>Det er bare forskellen på almindelige trusser – og LOCKTOWN NoShow.</p><p>Træning, hverdag eller fest – de sidder, som de skal. Ingen justeringer. Ingen distraktioner.</p>",
+        "before_image": "shopify://shop_images/new-front-before-mobile.jpg",
+        "after_image": "shopify://shop_images/new-front-after-mobile.jpg",
+        "expand_image": false,
+        "text_position": "start",
+        "before_after_text_position": "top",
+        "before_text": "Uden NoShow",
+        "after_text": "Med NoShow",
+        "drag_initial_position": 60,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "before_text_color": "#000000",
+        "after_text_color": "#000000",
+        "drag_cursor_background": "#ffffff",
+        "drag_cursor_color": "#000000"
+      }
+    },
+    "before_after_image_UxVDGt": {
+      "type": "before-after-image",
+      "disabled": true,
+      "name": "Before/after image",
+      "settings": {
+        "full_width": false,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "before_image": "shopify://shop_images/back-new-before.jpg",
+        "after_image": "shopify://shop_images/back-new-after.jpg",
+        "expand_image": false,
+        "text_position": "start",
+        "before_after_text_position": "top",
+        "before_text": "Uden NoShow",
+        "after_text": "Med NoShow",
+        "drag_initial_position": 60,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "before_text_color": "#000000",
+        "after_text_color": "#000000",
+        "drag_cursor_background": "#ffffff",
+        "drag_cursor_color": "#000000"
+      }
+    },
+    "section-6": {
+      "type": "impact-text",
+      "blocks": {
+        "block-1": {
+          "type": "item",
+          "settings": {
+            "title": "NoShow",
+            "subheading": "Hvad siger kunderne?",
+            "content": "",
+            "button_text": "",
+            "button_url": "shopify://collections/all",
+            "animate_impact_text": false,
+            "animate_impact_text_duration": 2
+          }
+        }
+      },
+      "block_order": [
+        "block-1"
+      ],
+      "disabled": true,
+      "name": "NoShow_HvadSigerKunderne",
+      "settings": {
+        "full_width": true,
+        "stack_mobile": true,
+        "text_alignment": "center",
+        "impact_text_style": "fill",
+        "text_divider": "none",
+        "impact_text_size_ratio": 1,
+        "background": "#e3b9c9",
+        "background_gradient": "linear-gradient(127deg, rgba(178, 138, 148, 1) 11%, rgba(233, 201, 205, 1) 99%)",
+        "heading_text_color": "",
+        "heading_gradient": "linear-gradient(180deg, rgba(26, 26, 26, 0.5), rgba(26, 26, 26, 0) 100%)",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
+    "images_with_text_scrolling_N4VVj8": {
+      "type": "images-with-text-scrolling",
+      "blocks": {
+        "item_bw8fm4": {
+          "type": "item",
+          "repeater": "{{ metaobjects.product_review_image_list.homepage.product_review_images.value }}",
+          "settings": {
+            "image": "{{ block.repeater.image.value }}",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "{{ block.repeater.heading.value }}",
+            "content": "{{ block.repeater.content | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "item_bw8fm4"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "p {--text-h1: var(--text-h4);}"
+      ],
+      "name": "Image Reviews",
+      "settings": {
+        "full_width": false,
+        "stack_on_mobile": false,
+        "show_counter": false,
+        "desktop_image_effect": "reveal",
+        "image_position": "end",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "media_with_text_6HgiHF": {
+      "type": "media-with-text",
+      "blocks": {
+        "video_MJgQcF": {
+          "type": "video",
+          "repeater": "{{ metaobjects.product_review_video_list.homepage.product_review_videos.value }}",
+          "settings": {
+            "video": "{{ block.repeater.video.value }}",
+            "external_video_url": "",
+            "autoplay": true,
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "{{ block.repeater.subheading.value }}",
+            "title": "{{ block.repeater.heading.value }}",
+            "content": "{{ block.repeater.content | metafield_tag }}",
+            "link_text": "",
+            "link_url": "",
+            "background": "{{ block.repeater.background.value }}",
+            "background_gradient": "",
+            "text_color": "{{ block.repeater.text.value }}",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_MJgQcF"
+      ],
+      "disabled": true,
+      "name": "Video Review",
+      "settings": {
+        "full_width": false,
+        "alternate_media_position": true,
+        "spacing": "none"
+      }
+    },
+    "section-10": {
+      "type": "press",
+      "blocks": {
+        "quote_QddjQN": {
+          "type": "quote",
+          "settings": {
+            "logo": "{{ metaobjects.product_review_quote[\"tinna-35-ar\"].image.value }}",
+            "logo_width": 100,
+            "author": "{{ metaobjects.product_review_quote[\"tinna-35-ar\"].author.value }}",
+            "content": "{{ metaobjects.product_review_quote[\"tinna-35-ar\"].quote.value }}",
+            "show_rating": false,
+            "rating": 4
+          }
+        }
+      },
+      "block_order": [
+        "quote_QddjQN"
+      ],
+      "disabled": true,
+      "name": "Quote Reviews",
+      "settings": {
+        "full_width": true,
+        "content_size": "medium",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    },
+    "section-15": {
+      "type": "feature-chart",
+      "blocks": {
+        "block-1": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "Driver",
+            "heading_2": "Weight",
+            "heading_3": "Dimensions",
+            "heading_4": "Battery",
+            "heading_5": "",
+            "heading_6": "",
+            "heading_7": "",
+            "heading_8": "",
+            "heading_9": "",
+            "heading_10": "",
+            "heading_11": "",
+            "heading_12": "",
+            "heading_13": "",
+            "heading_14": "",
+            "heading_15": "",
+            "heading_16": "",
+            "heading_17": "",
+            "heading_18": "",
+            "heading_19": "",
+            "heading_20": ""
+          }
+        },
+        "block-2": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>40mm Beryllium</p>",
+            "value_2": "<p>245g</p>",
+            "value_3": "<p>165mm x 190mm x 66mm</p>",
+            "value_4": "<p>24 hours</p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        },
+        "block-3": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>40mm Beryllium</p>",
+            "value_2": "<p>205g (On-Ear), 239g (Over-Ear)</p>",
+            "value_3": "<p>190mm x 155mm x 34mm (On-Ear), 200mm x 165mm x 40mm (Over-Ear)</p>",
+            "value_4": "<p>16 hours</p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "subheading": "Compare",
+        "title": "Highlight key differences at a glance",
+        "content": "<p>This section is perfect for showcasing product comparisons side-by-side. Use it to display key features, specifications, and pricing so customers can quickly decide which item fits their needs.</p>",
+        "button_text": "Learn more",
+        "button_url": "",
+        "text_position": "start",
+        "max_rows": 5,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "view_product": "View",
+        "viewing_product": "",
+        "show_product_swatch": true,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "",
+        "chart_text_color": "",
+        "chart_true_false_color": ""
+      }
+    }
+  },
+  "order": [
+    "image_with_text_overlay_RLRycn",
+    "image_with_text_overlay_eBHmLm",
+    "slideshow_zqtCfa",
+    "section-3",
+    "text_with_icons_mM63pX",
+    "text_with_icons_R8jigy",
+    "featured_collection_HDWhNT",
+    "featured_collection_4zFhxy",
+    "multi_column_hH9A7P",
+    "ss_testimonial_12_4yJWxi",
+    "testimonials_pybBwU",
+    "17649638542f0cadba",
+    "testimonials_AcEheF",
+    "multiple_images_with_text_C8QGV7",
+    "section-5",
+    "before_after_image_nKXaHL",
+    "before_after_image_UxVDGt",
+    "section-6",
+    "images_with_text_scrolling_N4VVj8",
+    "media_with_text_6HgiHF",
+    "section-10",
+    "section-15"
+  ]
+}

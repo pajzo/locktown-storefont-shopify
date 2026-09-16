@@ -1,0 +1,106 @@
+{% assign highlight_color = shop.metaobjects.locktown_colors['baggrund-highlight'].color.value %}
+{% assign text_color = shop.metaobjects.locktown_colors['noir'].color.value %}
+
+<div style="display: none">
+  <div id="lktn-upsell-line" style="--default-bg: {{ highlight_color }}; --default-text: {{ text_color }}"></div>
+</div>
+
+{% stylesheet %}
+  .lktn-upsell-line {
+    font-size: var(--text-base);
+    border-radius: var(--rounded);
+    padding: var(--spacing-2) var(--spacing-3);
+    background: var(--default-bg);
+    color: var(--default-text);
+  }
+
+  .lktn-cart-upsell-in-drawer {
+    order: 2;
+  }
+
+  .lktn-upsell-line.best-price {
+    color: rgb(var(--success-text));
+    background: rgb(var(--success-background));
+  }
+{% endstylesheet %}
+
+{% javascript %}
+  const ORG_UNIT_PRICE = 179;
+  const TIERS = [
+    { pairs: 3, unit_price: 149, prev_unit_price: ORG_UNIT_PRICE },
+    { pairs: 6, unit_price: 124, prev_unit_price: 149 },
+    { pairs: 9, unit_price: 105, prev_unit_price: 124, gift: 'GRATIS vaskepose' },
+  ];
+
+  function renderProgress(wrapperElement) {
+    fetch('/cart.js')
+      .then(function (r) {
+        return r.json();
+      })
+      .then(function (cart) {
+        var items = cart.items;
+        var noShowPair = countNoshowPairs(items);
+
+        if (noShowPair == 0) return;
+
+        //console.log('lktn cart upsell', noShowPair);
+
+        var nextTier = null;
+        for (const [index, item] of TIERS.entries()) {
+          if (noShowPair < item.pairs) {
+            nextTier = item;
+            break;
+          }
+        }
+
+        //console.log('selected next tier', nextTier);
+
+        var upsellEl = document.getElementById('lktn-upsell-line');
+        if (nextTier == null) {
+          upsellEl.className = 'lktn-upsell-line best-price';
+          upsellEl.innerHTML = '✓ Bedste pris + gratis vaskepose 🎁';
+        } else {
+          console.log("nextTier", nextTier);
+
+          var missingPair = nextTier.pairs - noShowPair;
+          var nextTierUnitPrice = nextTier.unit_price;
+          var prevTierUnitPrice = nextTier.prev_unit_price;
+          var nextTierDiscountUnit = ORG_UNIT_PRICE - nextTierUnitPrice;
+
+          upsellEl.className = 'lktn-upsell-line next-tier';
+          //upsellEl.innerHTML = '💰 Køb ' + missingPair + ' par mere og betal kun ' + nextTierUnitPrice + ' kr/par';
+          upsellEl.innerHTML = '💰 Køb ' + missingPair + ' par mere og gå fra ' + prevTierUnitPrice + ' → ' + nextTierUnitPrice + ' kr/par';
+
+          if (nextTier.gift != null) upsellEl.innerHTML += '<br>🎁 ' + nextTier.gift;
+        }
+
+        var old = document.getElementsByClassName('lktn-cart-upsell-in-drawer');
+        while (old.length > 0) old[0].remove();
+
+        var shippingInDrawer = upsellEl.cloneNode(true);
+        shippingInDrawer.removeAttribute('id');
+        shippingInDrawer.classList.add('lktn-cart-upsell-in-drawer');
+        wrapperElement.appendChild(shippingInDrawer);
+      })
+      .catch(function () {});
+  }
+
+  function countNoshowPairs(items) {
+    let count = 0;
+    items.forEach(function (item) {
+      if (item.handle && item.handle.indexOf('noshow') !== -1) {
+        count += item.quantity;
+      }
+    });
+    return count;
+  }
+
+  window.addEventListener('lktn:cart-wrapper-ready', function (e) {
+    renderProgress(e.detail.wrapper);
+  });
+
+  // Fallback hvis event allerede er fyret
+  if (window._lktnCartWrapper) {
+    renderProgress(window._lktnCartWrapper);
+  }
+{% endjavascript %}

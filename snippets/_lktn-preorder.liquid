@@ -1,0 +1,50 @@
+{% liquid
+  assign variant = product.selected_or_first_available_variant
+  assign formatted_date = variant.next_incoming_date | date: format: 'abbreviated_date'
+  assign preorder = false
+
+  if variant.available and variant.inventory_policy == 'continue' and variant.inventory_quantity <= 0 and variant.requires_shipping and variant.incoming and variant.next_incoming_date
+    assign preorder = true
+  endif
+%}
+
+<div class="lktn-preorder lktn-preorder-{{ preorder }}">
+  <div class="lktn-preorder__line">
+    <div class="preorder-icon">🔔</div>
+    <div class="preorder-text">
+      <strong>{{ shop.metafields.lktn.preoder_text_header }}</strong><br>
+      Forventet levering fra {{ formatted_date }}.
+    </div>
+  </div>
+</div>
+
+{%- if preorder -%}
+  <style>
+    .product-info__inventory {
+      display: none;
+    }
+  </style>
+{%- endif -%}
+
+{% stylesheet %}
+  .lktn-preorder-false {
+    display: none;
+  }
+
+  .lktn-preorder {
+    padding: 10px 25px;
+    border: 1px solid #FFB74A;
+    border-radius: 42px;
+  }
+
+  .lktn-preorder__line {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .lktn-preorder__line .preorder-icon {
+    font-size: 30px;
+  }
+{% endstylesheet %}

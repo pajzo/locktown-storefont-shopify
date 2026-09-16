@@ -1,0 +1,214 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "press_YD3JQP": {
+      "type": "press",
+      "blocks": {
+        "quote_dHyJzP": {
+          "type": "quote",
+          "settings": {
+            "logo_width": 50,
+            "author": "Tina, stifter af LOCKTOWN",
+            "content": "LOCKTOWN blev født ud af frustration over dårlig pasform og et ønske om, at vi kvinder kan gå igennem dagen uden at rette på noget.",
+            "show_rating": false,
+            "rating": 4
+          }
+        }
+      },
+      "block_order": [
+        "quote_dHyJzP"
+      ],
+      "name": "BornLKTN_Quote",
+      "settings": {
+        "full_width": true,
+        "content_size": "large",
+        "background": "{{ metaobjects.locktown_colors[\"baggrund-subtil\"].color.value }}",
+        "background_gradient": "",
+        "text_color": "rgba(0,0,0,0)",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    },
+    "media_with_text_rJWday": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_GXkrVt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/about4.jpg",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Om mig",
+            "content": "<p>Jeg har aldrig designet noget fancy.<br/>Men jeg har til gengæld brugt (alt for meget) tid på at hive mine tights, bukser og nylonstrømper ud af røven og gemme camel toe’en med lange trøjer.<br/>Og på et tidspunkt tænkte jeg bare: Hvorfor er der ingen, der har løst det her ordentligt?<br/><br/>Så jeg gjorde det selv.<br/><br/>Faktisk begyndte det hele, da jeg blev sygemeldt med to diskusprolapser.<br/>Jeg fik at vide, at træning skulle være en fast del af mit liv fremover – og midt i alt det, jeg troede skulle bremse mig, kom idéen.<br/>For når man pludselig lever i træningstøj, opdager man hurtigt, hvad der fungerer… og hvad der ikke gør.<br/><br/>Det her er ikke bare træningstrusser.<br/>De er lavet til alle de dage, hvor du ikke gider tænke over, om noget kravler op, skærer forkert, eller afslører lidt for meget.<br/>Om du har dem på under leggings, strømpebukser, kjoler, jeans eller joggers – så sidder de bare, som de skal.<br/><br/>Der er tre modeller, fordi vi ikke alle sammen har samme krop, samme stil eller samme behov.<br/>Men vi har alle ret til at føle os tilpas. Uden filter – også forneden.<br/><br/>Jeg laver ikke undertøj, der lover dig en ny krop.<br/>Jeg laver trusser, der giver dig ro i den, du har ♥︎<br/><br/>Tak fordi du er her!<br/>– og velkommen til #noshowjustglow.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#ffffff",
+            "background_gradient": "",
+            "text_color": "rgba(0,0,0,0)",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_GXkrVt"
+      ],
+      "name": "OmMig",
+      "settings": {
+        "full_width": false,
+        "alternate_media_position": false,
+        "spacing": "none"
+      }
+    },
+    "scrolling_text_EwB673": {
+      "type": "scrolling-text",
+      "disabled": true,
+      "name": "Scroll_NoShowJustGlow",
+      "settings": {
+        "full_width": true,
+        "text": "#NoShowJustGlow",
+        "text_size": "small",
+        "text_style": "fill",
+        "scrolling_mode": "auto",
+        "scrolling_speed": 10,
+        "background": "#faf8f4",
+        "background_gradient": "",
+        "text_color": "#111111",
+        "text_gradient": ""
+      }
+    },
+    "multi_column_myF9yR": {
+      "type": "multi-column",
+      "blocks": {
+        "item_YVjKJg": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/about2.jpg",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Designet af en, der faktisk bruger det",
+            "heading_tag": "h5",
+            "content": "<p>Jeg har aldrig designet tøj før, men med en uddannelse i salg af lingeri bag mig, ved jeg, hvad der gør forskellen på godt og dårligt undertøj.</p><p>Derfor har jeg selv valgt materialerne, testet hver model og justeret hver detalje, indtil det sad og føltes, som det skulle.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_U7Cn6g": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/about3.jpg",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Jeg gør det hele selv",
+            "heading_tag": "h5",
+            "content": "<p>Det her er ikke et stort firma. Det er bare mig – og en mission.</p><p>Jeg svarer på dine mails. Jeg pakker dine ordrer. Og jeg sender dem direkte fra Låsby.</p><p>Personligt hele vejen ♥︎</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_b4JpCK": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/about1.jpg",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Produceret med passion",
+            "heading_tag": "h5",
+            "content": "<p>Trusserne er designet i Danmark og produceret kun til os – helt fra bunden og efter mine egne krav til pasform, komfort og design.</p><p>De bliver produceret hos en nøje udvalgt producent, som vi har haft tæt kontakt med fra starten.</p><p>Materialet er testet, tilpasset og forfinet – indtil det føltes præcis, som det skulle: blødt, glat og behageligt.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_YVjKJg",
+        "item_U7Cn6g",
+        "item_b4JpCK"
+      ],
+      "name": "Multi-column_Images",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": true,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_4MFpg9": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_JqUREG": {
+          "type": "heading",
+          "settings": {
+            "text": "Vil du vide mere om NoShow?",
+            "heading_tag": "h4",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "button_pTDtHN": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "Læs mere her",
+            "url": "shopify://pages/noshow",
+            "background": "{{ metaobjects.locktown_colors[\"baggrund-highlight\"].color.value }}",
+            "text_color": "{{ metaobjects.locktown_colors.noir.color.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "heading_JqUREG",
+        "button_pTDtHN"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "press_YD3JQP",
+    "media_with_text_rJWday",
+    "scrolling_text_EwB673",
+    "multi_column_myF9yR",
+    "rich_text_4MFpg9"
+  ]
+}

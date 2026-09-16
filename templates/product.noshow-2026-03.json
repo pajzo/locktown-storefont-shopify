@@ -1,0 +1,1085 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "section_store_block_social_proof_gPdEcE": {
+          "type": "shopify://apps/section-store/blocks/block-social-proof/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+          "settings": {
+            "profile1": "shopify://shop_images/3B88B3D8-2BF4-426D-95A2-F7E29FDF7C76_copy_ratio_1-1_2fb9161f-9b36-44e3-b3cf-ecdca2834ef4.jpg",
+            "profile2": "shopify://shop_images/processed-7900E1A7-49D4-4742-963A-9D407565C8C6_ratio_1-1.jpg",
+            "profile3": "shopify://shop_images/47ECCD7B-2F9A-42C3-856E-70E112D53F9C_d7e983ef-551c-4b01-8ac1-4c5322caedaf.jpg",
+            "slide_icon_size": 28,
+            "use_carousel": false,
+            "text": "<p><strong>Maria</strong> ✓, <strong>Mette </strong>✓ og 1500+ andre elsker vores NoShow-serie!</p>",
+            "text_size": 13,
+            "text_color": "#000000",
+            "checkmark_size": 13,
+            "symbols_color": "#42a5f5",
+            "border": "solid",
+            "border_thickness": 1,
+            "border_color": "#d7d7d7",
+            "radius": 16,
+            "bg_color": "#f6f6f6",
+            "padding_vertical": 12,
+            "padding_horizontal": 16,
+            "clip_as_header_of_wrapper": false
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h2"
+          }
+        },
+        "badges": {
+          "type": "badges",
+          "settings": {}
+        },
+        "liquid_BLrWH3": {
+          "type": "liquid",
+          "name": "LKTN Social proof",
+          "disabled": true,
+          "settings": {
+            "liquid": "{% render '_lktn-social-proof', tail_text: 'elsker vores NoShow-serie!'  %}"
+          }
+        },
+        "price": {
+          "type": "price",
+          "disabled": true,
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "rating_DyQJ3f": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "liquid_M9gUMd": {
+          "type": "liquid",
+          "name": "LKTN Benefits",
+          "disabled": true,
+          "settings": {
+            "liquid": "{% render '_lktn-benefits' %}"
+          }
+        },
+        "section_store_block_benefits_list_9VqEi8": {
+          "type": "shopify://apps/section-store/blocks/block-benefits-list/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+          "settings": {
+            "items_gap": 10,
+            "first_text": "<p>{{ product.metafields.custom.feature_1.value }}</p>",
+            "second_text": "<p>{{ product.metafields.custom.feature_2.value }}</p>",
+            "third_text": "<p>{{ product.metafields.custom.feature_3.value }}</p>",
+            "fourth_text": "<p>{{ product.metafields.custom.feature_4.value }}</p>",
+            "icon_selection": "icon_5",
+            "icon_size": 25,
+            "icon_color": "#e3b9c9",
+            "text_size": 20,
+            "text_color": "#000000",
+            "content_align": "left",
+            "border": "none",
+            "border_thickness": 1,
+            "border_color": "#000000",
+            "radius": 0,
+            "background": "",
+            "background_gradient": "",
+            "padding_vertical": 0,
+            "padding_horizontal": 0
+          }
+        },
+        "separator": {
+          "type": "separator",
+          "disabled": true,
+          "settings": {}
+        },
+        "product_variations_4Bxdxe": {
+          "type": "product_variations",
+          "name": "Product variation: Model",
+          "settings": {
+            "option_name": "Model",
+            "option_value_metafield": "custom.variation_models_value",
+            "products": "{{ product.metafields.custom.variation_models_products.value }}",
+            "selector_style": "variant_image"
+          }
+        },
+        "product_variations_m7U7UG": {
+          "type": "product_variations",
+          "name": "Product variation: Pasform",
+          "disabled": true,
+          "settings": {
+            "option_name": "Pasform",
+            "option_value_metafield": "custom.variation_value",
+            "products": "{{ product.metafields.custom.variation_products.value }}",
+            "selector_style": "block"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": false,
+            "selector_style": "block",
+            "swatch_selector_style": "swatch",
+            "variant_image_options": "",
+            "size_chart_page": "{{ product.metafields.custom.storrelsesguide_page.value }}"
+          }
+        },
+        "inventory_DkyrBc": {
+          "type": "inventory",
+          "disabled": true,
+          "settings": {
+            "low_inventory_threshold": 10
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "text_YrNrBc": {
+          "type": "text",
+          "name": "Text: Køb flere spar mere",
+          "disabled": true,
+          "settings": {
+            "text": "<h3>Køb flere - spar mere</h3><p>Mix frit på tværs af modeller, farver og størrelser. Rabatten fratrækkes automatisk i kurven.</p><ul><li><strong>3 par til 449 kr.</strong> - 149 kr./par</li><li><strong>6 par til 749 kr. </strong>- 124 kr./par</li><li><strong>9 par til 949 kr.</strong> - 105 kr./par</li></ul>"
+          }
+        },
+        "section_store_block_bundle_9LCLR3": {
+          "type": "shopify://apps/section-store/blocks/block-bundle/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+          "settings": {
+            "padding_vertical": 10,
+            "padding_horizontal": 0
+          }
+        },
+        "section_store_block_banner_YecyNA": {
+          "type": "shopify://apps/section-store/blocks/block-banner/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+          "disabled": true,
+          "settings": {
+            "gap": 2,
+            "text_align": "center",
+            "link": "",
+            "use_image": false,
+            "icon": "none",
+            "image_size": 30,
+            "image_position": "left",
+            "icon_color": "#1a1a1a",
+            "title_text": "<p><strong>Vil du mixe din pakke?</strong></p>",
+            "title_size": 14,
+            "title_color": "#7a4b5c",
+            "body_text": "<p>Mix frit mellem pasformer, farver og størrelser - rabatten trækkes automatisk i kurven.</p>",
+            "body_size": 11,
+            "body_color": "#7a4b5c",
+            "border": "solid",
+            "border_thickness": 1,
+            "border_color": "#e7b8c7",
+            "radius": 16,
+            "background": "#fff1f5",
+            "background_gradient": "",
+            "shadow": "none",
+            "padding_vertical": 8,
+            "padding_horizontal": 12
+          }
+        },
+        "section_store_block_product_addons_XMWFTV": {
+          "type": "shopify://apps/section-store/blocks/block-product-addons/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+          "disabled": true,
+          "settings": {
+            "products": [
+              "vaskepose"
+            ],
+            "product_list_style": "stack",
+            "variant_selector": "none",
+            "show_compare_price": true,
+            "use_discount_tag": true,
+            "discount_tag_background": "#c9ffc9",
+            "switch_style": "checkbox",
+            "switch_size": 22,
+            "switch_position": "last",
+            "switch_vertical_position": "center",
+            "switch_color": "#000000",
+            "font_size": 12,
+            "font_weight": "normal",
+            "item_title_color": "#000000",
+            "item_subtitle_color": "#000000",
+            "image_size": 50,
+            "item_border_style": "none",
+            "item_border_width": 1,
+            "item_border_color": "#d7d7d7",
+            "item_border_radius": 16,
+            "item_bg_color": "#f6f6f6",
+            "background_gradient": "",
+            "item_padding_vertical": 12,
+            "item_padding_horizontal": 16
+          }
+        },
+        "section_store_block_upsell_GXBCBh": {
+          "type": "shopify://apps/section-store/blocks/block-upsell/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+          "disabled": true,
+          "settings": {
+            "products": [
+              "vaskepose"
+            ],
+            "product_list_style": "stack",
+            "variant_selector": "none",
+            "cart_app": "none",
+            "auto_detect_theme": true,
+            "theme_schema_name": "dawn",
+            "force_open_cart_page_on_click": false,
+            "show_compare_price": true,
+            "font_size": 13,
+            "font_weight": "normal",
+            "item_title_color": "#000000",
+            "item_subtitle_color": "#000000",
+            "image_size": 50,
+            "item_bg_color": "#f6f6f6",
+            "item_border_style": "none",
+            "item_border_width": 1,
+            "item_border_color": "#d7d7d7",
+            "item_border_radius": 10,
+            "atc_button_text": "Tilføj",
+            "atc_button_soldout_text": "Udsolgt",
+            "atc_button_text_color": "#ffffff",
+            "atc_button_bg_color": "#000000",
+            "item_padding_vertical": 12,
+            "item_padding_horizontal": 16
+          }
+        },
+        "section_store_block_pulse_badge_NjHhDY": {
+          "type": "shopify://apps/section-store/blocks/block-pulse-badge/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+          "settings": {
+            "content_align": "center",
+            "use_indicator": true,
+            "pulse_icon_size": 12,
+            "pulse_icon_color": "#f1831d",
+            "text": "<p>74% People choose subscription</p>",
+            "text_size": 15,
+            "auto_text_weight": "bold",
+            "text_color": "#121212",
+            "border": "none",
+            "border_thickness": 1,
+            "border_color": "#000000",
+            "radius": 0,
+            "background": "",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_left": 0,
+            "padding_right": 0
+          }
+        },
+        "section_store_block_badge_hwa6NT": {
+          "type": "shopify://apps/section-store/blocks/block-badge/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+          "settings": {
+            "first_title": "✨ Gratis ombytning",
+            "first_bg_color": "#f3f1f2",
+            "first_title_color": "#000000",
+            "second_title": "📦 Sender alle hverdage kl. 16",
+            "second_bg_color": "#f3f1f2",
+            "second_title_color": "#000000",
+            "third_title": "",
+            "third_bg_color": "#dc2626",
+            "third_title_color": "#ffffff",
+            "title_size": 13,
+            "font_weight": "normal",
+            "card_border": "none",
+            "card_border_width": 1,
+            "card_border_color": "#000000",
+            "card_radius": 16,
+            "card_align": "center",
+            "background_gradient": "",
+            "padding_vertical": 0,
+            "padding_sides": 16
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "section_store_block_atc_style_DMRDAh": {
+          "type": "shopify://apps/section-store/blocks/block-atc-style/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+          "settings": {
+            "background_color": "#000000",
+            "text_color": "#ffffff",
+            "hover_background_color": "",
+            "hover_text_color": "",
+            "font_size": 0,
+            "font_weight": "default",
+            "border_style": "none",
+            "border_width": 1,
+            "border_color": "#000000",
+            "border_radius": -1,
+            "padding_vertical": 0,
+            "background_effect": "lift",
+            "gradient_color_end": "#333333",
+            "hover_effect": "shine_lift",
+            "animation": "none",
+            "button_icon": "arrow_right",
+            "use_custom_text": false,
+            "button_text": "Add to cart",
+            "show_price": false,
+            "round_price": true,
+            "compare_at_price_color": "#999999"
+          }
+        },
+        "section_store_block_sticky_atc_YijUhF": {
+          "type": "shopify://apps/section-store/blocks/block-sticky-atc/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+          "disabled": true,
+          "settings": {
+            "desktop_layout": "full-width",
+            "mobile_layout": "full-width-no-spacing",
+            "hide_image_mobile": true,
+            "stack_on_mobile": true,
+            "border": "none",
+            "border_thickness": 1,
+            "border_color": "#dcdcdc",
+            "radius": 8,
+            "background": "#ffffff",
+            "padding_vertical": 12,
+            "padding_horizontal": 16,
+            "change_text": "Change"
+          }
+        },
+        "section_store_block_payment_icons_2_yeBMhe": {
+          "type": "shopify://apps/section-store/blocks/block-payment-icons-2/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+          "settings": {
+            "icons_layout": "fixed_grid",
+            "icons_per_row": 10,
+            "icons_per_row_mobile": 7,
+            "gap": 10,
+            "icons_align": "center",
+            "icons_monochrome": false,
+            "enable_first_image": true,
+            "first_custom_image": "shopify://shop_images/MobilePay_Pay_Mark_Medium_RGB_290125.svg",
+            "enable_second_image": false,
+            "enable_third_image": false,
+            "icon_size": 20,
+            "border": "none",
+            "border_thickness": 1,
+            "border_color": "#000000",
+            "radius": 0,
+            "background": "",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_left": 0,
+            "padding_right": 0
+          }
+        },
+        "liquid_6mCMTQ": {
+          "type": "liquid",
+          "name": "LKTN Payment Icons",
+          "disabled": true,
+          "settings": {
+            "liquid": "{% render '_lktn-payment-icons2', align: 'center' %}"
+          }
+        },
+        "liquid_bENmUC": {
+          "type": "liquid",
+          "name": "SS Product Videos",
+          "disabled": true,
+          "settings": {
+            "liquid": "<div id='ss-product-videos'></div>"
+          }
+        },
+        "section_store_block_video_carousel_FWFFTV": {
+          "type": "shopify://apps/section-store/blocks/block-video-carousel/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+          "settings": {
+            "video_1": "shopify://files/videos/UGC Emma 2026-03.mov",
+            "video_2": "shopify://files/videos/0B81B81E-6614-4C87-A97A-AFADA51E46E5.mov",
+            "video_3": "shopify://files/videos/UGC Helle Leggings.mov",
+            "video_4": "shopify://files/videos/560501733cbc4a1b9cd189f44edcd701.mov",
+            "slider_style": "arrows",
+            "modal_style": "full",
+            "video_autoplay": "true",
+            "play_button_position": "center",
+            "play_button_size": "small",
+            "item_border_style": "none",
+            "item_border_width": 1,
+            "item_border_color": "linear-gradient(180deg, rgba(26, 26, 26, 1), rgba(255, 255, 255, 1) 100%)",
+            "item_border_radius": 16,
+            "item_padding": 0,
+            "grid_items": "4",
+            "thumbnail_shape": "circle",
+            "block_border_style": "none",
+            "block_border_width": 1,
+            "block_border_color": "#d7d7d7",
+            "block_border_radius": 16,
+            "block_bg_color": "",
+            "block_padding_vertical": 8,
+            "block_padding_horizontal": 0
+          }
+        },
+        "associated_products_chexE7": {
+          "type": "associated_products",
+          "disabled": true,
+          "settings": {
+            "title": "Andre pasformer",
+            "stack_products": true,
+            "products_count": 5,
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "judge_me_reviews_review_snippet_widget_8RNfBk": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_snippet_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
+          "settings": {}
+        },
+        "description_YyDGpr": {
+          "type": "description",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "collapse_content": true
+          }
+        },
+        "collapsible_text_rb4ndQ": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "title": "Specifikationer",
+            "content": "{{ product.metafields.custom.specifikationer_list | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "collapsible_text_NJpiCd": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "title": "Størrelsesguide",
+            "content": "",
+            "page": "storrelsesguide"
+          }
+        },
+        "collapsible_text_qeRwxL": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "title": "Vaskeanvisning",
+            "content": "{{ product.metafields.custom.vaskeanvisning | metafield_tag: field: 'tekst' }}",
+            "page": ""
+          }
+        },
+        "collapsible_text_rWXp7m": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "title": "Levering",
+            "content": "{{ metaobjects.faq_item[\"hvor-hurtigt-far-jeg-min-ordre\"].answer | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "collapsible_text_LUUgPJ": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "title": "Returnering",
+            "content": "{{ metaobjects.faq_item[\"hvordan-fungerer-retur-og-ombytning\"].answer | metafield_tag }}",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "section_store_block_social_proof_gPdEcE",
+        "title",
+        "badges",
+        "liquid_BLrWH3",
+        "price",
+        "rating_DyQJ3f",
+        "liquid_M9gUMd",
+        "section_store_block_benefits_list_9VqEi8",
+        "separator",
+        "product_variations_4Bxdxe",
+        "product_variations_m7U7UG",
+        "variant_picker",
+        "inventory_DkyrBc",
+        "quantity_selector",
+        "text_YrNrBc",
+        "section_store_block_bundle_9LCLR3",
+        "section_store_block_banner_YecyNA",
+        "section_store_block_product_addons_XMWFTV",
+        "section_store_block_upsell_GXBCBh",
+        "section_store_block_pulse_badge_NjHhDY",
+        "section_store_block_badge_hwa6NT",
+        "buy_buttons",
+        "section_store_block_atc_style_DMRDAh",
+        "section_store_block_sticky_atc_YijUhF",
+        "section_store_block_payment_icons_2_yeBMhe",
+        "liquid_6mCMTQ",
+        "liquid_bENmUC",
+        "section_store_block_video_carousel_FWFFTV",
+        "associated_products_chexE7",
+        "judge_me_reviews_review_snippet_widget_8RNfBk",
+        "description_YyDGpr",
+        "collapsible_text_rb4ndQ",
+        "collapsible_text_NJpiCd",
+        "collapsible_text_qeRwxL",
+        "collapsible_text_rWXp7m",
+        "collapsible_text_LUUgPJ"
+      ],
+      "settings": {
+        "full_width": true,
+        "show_fixed_add_to_cart": false,
+        "desktop_media_width": 55,
+        "desktop_media_layout": "grid_highlight",
+        "mobile_media_size": "expanded",
+        "mobile_carousel_control": "thumbnails",
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 2,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    },
+    "hot_spots_i64JhY": {
+      "type": "hot-spots",
+      "blocks": {
+        "item_PtkQwH": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 60,
+            "vertical_position": 55,
+            "horizontal_position_mobile": 65,
+            "vertical_position_mobile": 55,
+            "icon_width": 32,
+            "title": "Usynlig under tøjet",
+            "content": "<p>Glat finish og seamless pasform, der gør den usynlig under dit tøj.</p>"
+          }
+        },
+        "item_aVYbCe": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 42,
+            "vertical_position": 52,
+            "horizontal_position_mobile": 31,
+            "vertical_position_mobile": 52,
+            "icon_width": 32,
+            "title": "Ice-silk overflade",
+            "content": "<p>Silkeblød “ice-silk” overflade, der føles let og behagelig mod huden.</p>"
+          }
+        },
+        "item_W4kQ8K": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 45,
+            "vertical_position": 75,
+            "horizontal_position_mobile": 36,
+            "vertical_position_mobile": 70,
+            "icon_width": 32,
+            "title": "Soft Zone",
+            "content": "<p>Indvendig Soft Zone i 100% bomuld for åndbarhed og komfort – camel toe proof.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_PtkQwH",
+        "item_aVYbCe",
+        "item_W4kQ8K"
+      ],
+      "custom_css": [],
+      "name": "Hot spots",
+      "settings": {
+        "full_width": true,
+        "image": "shopify://shop_images/Untitled_design_16.jpg",
+        "mobile_image": "shopify://shop_images/Untitled_design_17.jpg",
+        "title": "",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "desktop_text_position": "place-self-start-end text-end",
+        "image_background": "rgba(0,0,0,0)",
+        "image_background_gradient": "",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "overlay_text_color": "#ffffff",
+        "overlay_button_background": "",
+        "overlay_button_text_color": "",
+        "hot_spot_dot_background": "#e3b9c9",
+        "hot_spot_dot_text_color": "#000000",
+        "hot_spot_content_background": "#ffffff",
+        "hot_spot_content_text_color": "#000000",
+        "hot_spot_content_opacity": 90,
+        "hot_spot_content_blur_radius": 3
+      }
+    },
+    "image_link_blocks_jcPDE6": {
+      "type": "image-link-blocks",
+      "blocks": {
+        "item_GqqEnR": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/NS_Block01.png",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_Bh3NRp": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/NS_Block2.png",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_LEmU9b": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/NS_Block3.png",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_EwtjWT": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/NS_Block4.png",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_HADEjh": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/NS_Block5.png",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_AgUzzg": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/NS_Block6.png",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "item_GqqEnR",
+        "item_Bh3NRp",
+        "item_LEmU9b",
+        "item_EwtjWT",
+        "item_HADEjh",
+        "item_AgUzzg"
+      ],
+      "name": "Image link blocks",
+      "settings": {
+        "full_width": true,
+        "block_size": "large",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "media_grid_F6rLWm": {
+      "type": "media-grid",
+      "blocks": {
+        "image_cMmEQW": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_Ja4JHD": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_eAA4U6": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_prbkWJ": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_crbUrF": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_cMmEQW",
+        "image_Ja4JHD",
+        "image_eAA4U6",
+        "image_prbkWJ",
+        "image_crbUrF"
+      ],
+      "disabled": true,
+      "name": "Media grid",
+      "settings": {
+        "full_width": true,
+        "reduce_width": false,
+        "desktop_row_height": 400,
+        "mobile_row_height": 150,
+        "background": "",
+        "background_gradient": ""
+      }
+    },
+    "impact_text_CUWJjB": {
+      "type": "impact-text",
+      "blocks": {
+        "item_AktbbF": {
+          "type": "item",
+          "settings": {
+            "title": "76%",
+            "subheading": "Nylon",
+            "content": "<p>Giver styrke, holdbarhed og en glat overflade.</p>",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": true,
+            "animate_impact_text_duration": 2
+          }
+        },
+        "item_LW9GYw": {
+          "type": "item",
+          "settings": {
+            "title": "24%",
+            "subheading": "Elastan",
+            "content": "<p>Tilfører ekstra stretch, så trussen tilpasser sig din krop.</p>",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": true,
+            "animate_impact_text_duration": 2
+          }
+        },
+        "item_PEYPE9": {
+          "type": "item",
+          "settings": {
+            "title": "100%",
+            "subheading": "Bomuld",
+            "content": "<p>Soft Zone indlæg af bomuld – åndbar og hygiejnisk komfort hele dagen.</p>",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": true,
+            "animate_impact_text_duration": 2
+          }
+        }
+      },
+      "block_order": [
+        "item_AktbbF",
+        "item_LW9GYw",
+        "item_PEYPE9"
+      ],
+      "disabled": true,
+      "name": "Impact text",
+      "settings": {
+        "full_width": true,
+        "stack_mobile": false,
+        "text_alignment": "center",
+        "impact_text_style": "fill",
+        "text_divider": "line",
+        "impact_text_size_ratio": 1,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "heading_text_color": "",
+        "heading_gradient": "linear-gradient(0deg, rgba(178, 138, 148, 1) 11%, rgba(233, 201, 205, 1) 99%)",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
+    "media_with_text_eWTwCA": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_nbajXd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/NS_HIGH_WAIST_BLACK__Studio__Raw.png",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "Usynlig under tøjet",
+            "title": "Trusser, du ikke skal tænke over",
+            "content": "<p>NoShow er lavet til at forsvinde under kjoler, leggings og jeans. Seamless, glat og behagelig — så du slipper for kanter, linjer og små justeringer i løbet af dagen.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "image_apWV7e": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/NS_LOW__Outdoor01.png",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "Komfort + ro",
+            "title": "Camel toe proof — uden kompromis",
+            "content": "<p>Soft Zone giver dig følelsen af at være dækket og tilpas, selv når tøjet er stramt. Det er den slags tryghed, der gør, at du kan fokusere på det du laver — ikke på dit undertøj.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "image_EdhhwK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/NS_Outdoor_Orange_05.png",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "Blød, let, strækbar",
+            "title": "Ice-silk feel hele dagen",
+            "content": "<p>Den silkebløde overflade og strækbare pasform følger kroppen uden at stramme. Perfekt til træning, hverdag og fest — NoShow føles let, og bliver hurtigt din “go-to”.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_nbajXd",
+        "image_apWV7e",
+        "image_EdhhwK"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "alternate_media_position": true,
+        "spacing": "none"
+      }
+    },
+    "before_after_image_yJwLtA": {
+      "type": "before-after-image",
+      "name": "Before/after image",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Én forskel, du ikke kan overse",
+        "content": "<p>Det her er ikke redigering. Ikke bedre lys.<br/>Det er bare forskellen på almindelige trusser – og LOCKTOWN NoShow.</p><p>Træning, hverdag eller fest – de sidder, som de skal. Ingen justeringer. Ingen distraktioner.</p>",
+        "before_image": "shopify://shop_images/new-front-before-mobile.jpg",
+        "after_image": "shopify://shop_images/new-front-after-mobile.jpg",
+        "expand_image": false,
+        "text_position": "start",
+        "before_after_text_position": "top",
+        "before_text": "Uden NoShow",
+        "after_text": "Med NoShow",
+        "drag_initial_position": 60,
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "text_color": "",
+        "before_text_color": "#000000",
+        "after_text_color": "#000000",
+        "drag_cursor_background": "#ffffff",
+        "drag_cursor_color": "#000000"
+      }
+    },
+    "faq_i3UUUN": {
+      "type": "faq",
+      "blocks": {
+        "item_XaQKJC": {
+          "type": "item",
+          "repeater": "{{ metaobjects.faq_list[\"no-show-product-page\"].items.value }}",
+          "settings": {
+            "title": "{{ block.repeater.question.value }}",
+            "content": "{{ block.repeater.answer | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "item_XaQKJC"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Ofte stillede spørgsmål",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "hot_spots_i64JhY",
+    "image_link_blocks_jcPDE6",
+    "media_grid_F6rLWm",
+    "impact_text_CUWJjB",
+    "media_with_text_eWTwCA",
+    "before_after_image_yJwLtA",
+    "faq_i3UUUN"
+  ]
+}

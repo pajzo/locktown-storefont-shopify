@@ -1,0 +1,162 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "Footer group",
+  "sections": {
+    "text-with-icons": {
+      "type": "text-with-icons",
+      "blocks": {
+        "free-shipping": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-star",
+            "mobile_icon_width": 24,
+            "icon_width": 24,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "{{ metaobjects.usp_features[\"dansk-design\"].title.value }}",
+            "content": "<p>{{ metaobjects.usp_features[\"dansk-design\"].text.value }}</p>"
+          }
+        },
+        "customer-support": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-love",
+            "mobile_icon_width": 24,
+            "icon_width": 24,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "{{ metaobjects.usp_features[\"tre-pasformer\"].title.value }}",
+            "content": "<p>{{ metaobjects.usp_features[\"tre-pasformer\"].text.value }}</p>"
+          }
+        },
+        "discount": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-leaf",
+            "mobile_icon_width": 24,
+            "icon_width": 24,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "{{ metaobjects.usp_features[\"seamless-og-andbart\"].title.value }}",
+            "content": "<p>{{ metaobjects.usp_features[\"seamless-og-andbart\"].text.value }}</p>"
+          }
+        },
+        "payment": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-box",
+            "mobile_icon_width": 24,
+            "icon_width": 24,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "{{ metaobjects.usp_features[\"hurtig-levering\"].title.value }}",
+            "content": "<p>{{ metaobjects.usp_features[\"hurtig-levering\"].text.value }}</p>"
+          }
+        }
+      },
+      "block_order": [
+        "free-shipping",
+        "customer-support",
+        "discount",
+        "payment"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "stack_on_mobile": false,
+        "title": "",
+        "heading_tag": "h6",
+        "text_alignment": "center",
+        "icon_spacing": "small",
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "custom_liquid_Y4tpmY": {
+      "type": "custom-liquid",
+      "name": "LKTN Custom Stuff",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true,
+        "liquid": "{% render '_lktn_wrapper' %}\n{% render '_lktn_cart_upsell' %}\n{% render '_lktn_cart_free_shipping' %}\n{% render '_lktn_shipping_timer' %}",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "text_kjYqtD": {
+          "type": "text",
+          "settings": {
+            "title": "LOCKTOWN",
+            "content": "<p>LKTN ApS<br/>Århusvej 14<br/>8670 Låsby<br/>CVR: 35820655</p><p><a href=\"mailto:kontakt@locktown.dk\" title=\"mailto:kontakt@locktown.dk\">kontakt@locktown.dk</a></p>",
+            "enable_follow_on_shop": false
+          }
+        },
+        "links": {
+          "type": "links",
+          "settings": {
+            "menu": "main-menu",
+            "show_menu_title": true,
+            "menu_title": "Menu"
+          }
+        },
+        "links_yLA7Bk": {
+          "type": "links",
+          "settings": {
+            "menu": "praktisk",
+            "show_menu_title": true,
+            "menu_title": "Information"
+          }
+        },
+        "newsletter": {
+          "type": "newsletter",
+          "settings": {
+            "image_width": 100,
+            "heading_size": "h6",
+            "title": "Få 50 kr. på din første ordre ♥︎",
+            "content": "<p>Skriv dig op, så sender vi din kode. Du hører fra os et par gange om måneden – med produktnyt, historier og det, der er værd at åbne en mail for.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_kjYqtD",
+        "links",
+        "links_yLA7Bk",
+        "newsletter"
+      ],
+      "settings": {
+        "show_social_media": true,
+        "show_payment_icons": true,
+        "show_powered_by_shopify": true,
+        "show_policy_links": false,
+        "show_country_selector": false,
+        "show_country_flag": true,
+        "show_country_name": true,
+        "show_locale_selector": false
+      }
+    }
+  },
+  "order": [
+    "text-with-icons",
+    "custom_liquid_Y4tpmY",
+    "footer"
+  ]
+}

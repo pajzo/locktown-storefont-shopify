@@ -1,0 +1,95 @@
+{% comment %}
+  Usage:
+  {% render '_lktn-social-proof',
+    names: "Maria, Mette",
+    count: "1600+",
+    message: "andre elsker vores NoShow-serie!",
+    badge_color: "#4F9EE8"
+  %}
+{% endcomment %}
+
+{% assign names_array = names | split: ',' %}
+
+<div class="spb-wrapper">
+  <div class="spb-inner">
+
+    <div class="spb-avatars">
+      {% if avatar_1 %}
+        <img class="spb-avatar" src="{{ avatar_1 }}" alt="" width="28" height="28">
+      {% else %}
+        <div class="spb-avatar spb-avatar--placeholder"></div>
+      {% endif %}
+      {% if avatar_2 %}
+        <img class="spb-avatar" src="{{ avatar_2 }}" alt="" width="28" height="28">
+      {% else %}
+        <div class="spb-avatar spb-avatar--placeholder"></div>
+      {% endif %}
+      {% if avatar_3 %}
+        <img class="spb-avatar" src="{{ avatar_3 }}" alt="" width="28" height="28">
+      {% else %}
+        <div class="spb-avatar spb-avatar--placeholder"></div>
+      {% endif %}
+    </div>
+
+    <p class="spb-text">
+      {% for name in names_array %}
+        {% assign trimmed = name | strip %}
+        <strong>{{ trimmed }}</strong>
+        <svg class="spb-badge" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="7" cy="7" r="7" fill="{{ badge_color | default: '#4F9EE8' }}"/>
+          <path d="M4 7l2 2 4-4" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        {% unless forloop.last %} og {% endunless %}
+      {% endfor %}
+      og <strong>{{ count }}</strong> {{ message }}
+    </p>
+
+  </div>
+</div>
+
+<style>
+  .spb-wrapper {
+    padding: var(--spacing-3) 14px;
+    border: 1px solid #F0F0F0;
+    border-radius: var(--rounded-block);
+    display: inline-flex;
+    background: #F0F0F050;
+    width: 100%;
+  }
+  .spb-inner {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .spb-avatars {
+    display: flex;
+    flex-shrink: 0;
+  }
+  .spb-avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    object-fit: cover;
+    margin-right: -6px;
+  }
+  .spb-avatar--placeholder {
+    background: #e0e0e0;
+  }
+  .spb-avatars .spb-avatar:last-child {
+    margin-right: 0;
+  }
+  .spb-badge {
+    vertical-align: middle;
+    margin-left: 1px;
+    margin-right: 2px;
+  }
+  .spb-text {
+    margin: 0;
+    font-size: var(--text-sm);
+    line-height: 1.4;
+    white-space: nowrap;
+    white-space: normal; /* fjern nowrap */
+    word-break: break-word;
+  }
+</style>
