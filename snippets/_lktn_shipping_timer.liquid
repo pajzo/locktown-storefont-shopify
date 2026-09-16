@@ -1,3 +1,16 @@
+{%- comment -%}
+  Shipping cutoff timer.
+
+  Rendered globally from footer-group, so the markup below is a hidden
+  template that gets cloned next to the inventory line on product pages.
+  Everything is gated on that target existing: on a page without one this
+  snippet makes no network request and starts no interval.
+
+  If you ever move the {% render %} out of footer-group and into the product
+  template, Shopify drops the whole script from non-product pages and the
+  gate below becomes belt-and-braces.
+{%- endcomment -%}
+
 <div id="lktn-shipping-timer-wrapper">
   <span class="text-with-icon lktn-shipping-timer text-warning">
     <svg
@@ -51,104 +64,187 @@
 {% endstylesheet %}
 
 {% javascript %}
-  function render() {
-    fetch('https://opshub.lktn.dk/api/public/shipping/cutoff')
-      .then((r) => r.json())
-      .then((data) => {
-        var shippingCutoff = data;
+  var CUTOFF_URL = 'https://opshub.lktn.dk/api/public/shipping/cutoff';
+  var CACHE_KEY = 'lktn:shipping-cutoff';
+  var CACHE_TTL = 5 * 60 * 1000;
 
-        if (shippingCutoff.today) {
-          elementRemoveClass('.timer-today', 'timer-hidden');
+  var countdown = null;
+  var pending = null;
 
-          var cutoffTime = new Date(data.cutoffAt).getTime();
-          var timerInterval = null;
+  // The inventory line of the *main* product, if it has something to sit next
+  // to. Returns null on every other page, which is what keeps the fetch and
+  // the interval off the rest of the store.
+  function findAnchor() {
+    var inventory = document.querySelector('variant-inventory');
+    if (inventory == null) return null;
 
-          function updateTimer() {
-            var remaining = Math.floor((cutoffTime - Date.now()) / 1000);
+    // An unavailable variant renders <variant-inventory> with no span.
+    var span = inventory.querySelector('span');
+    if (span == null) return null;
 
-            if (remaining <= 0) {
-              elementAddClass('.timer-today', 'timer-hidden');
-              clearInterval(timerInterval);
-              render();
-              return;
-            }
+    // Scope the sold-out check to this product. Product cards render
+    // <sold-out-badge> too, so a sold-out item in a related-products carousel
+    // must not suppress the timer on an in-stock product page.
+    var info = inventory.closest('.product-info');
+    if (info != null && info.querySelector('sold-out-badge') != null) return null;
 
-            var h = Math.floor(remaining / 3600);
-            var m = Math.floor((remaining % 3600) / 60);
-            var s = remaining % 60;
+    return span;
+  }
 
-            var formatted =
-              (h > 0 ? String(h).padStart(2, '0') + ':' : '') +
-              String(m).padStart(2, '0') +
-              ':' +
-              String(s).padStart(2, '0');
+  function sync() {
+    var anchor = findAnchor();
 
-            elementSetContent('.timer-today-badge', formatted);
+    if (anchor == null) {
+      stopCountdown();
+      return;
+    }
 
-            if (remaining < 3600) {
-              elementAddClass('.timer-today-badge', 'urgent');
-            }
-          }
+    var inventory = anchor.closest('variant-inventory');
+    if (inventory.querySelector('.lktn-shipping-timer') == null) {
+      var template = document.querySelector('#lktn-shipping-timer-wrapper .lktn-shipping-timer');
+      if (template == null) return;
+      anchor.after(template.cloneNode(true));
+    }
 
-          timerInterval = setInterval(updateTimer, 1000);
-          updateTimer();          
-        } else {
-          elementRemoveClass('.timer-text', 'timer-hidden');
+    loadCutoff(false).then(apply).catch(fail);
+  }
 
-          if (shippingCutoff.tomorrow) {
-            elementSetContent('.timer-text-badge', 'i morgen kl. ' + shippingCutoff.clock);
-          } else {
-            elementSetContent('.timer-text-badge', shippingCutoff.text);
-          }
-        }
+  // One request per session per TTL, shared by every caller. cutoffAt is an
+  // absolute timestamp, so a cached payload stays correct until it expires —
+  // and when the countdown reaches zero we refetch past the cache.
+  function loadCutoff(force) {
+    if (!force) {
+      var cached = readCache();
+      if (cached != null) return Promise.resolve(cached);
+      if (pending != null) return pending;
+    }
+
+    pending = fetch(CUTOFF_URL)
+      .then(function (response) {
+        if (!response.ok) throw new Error('HTTP ' + response.status);
+        return response.json();
       })
-      .catch(function (err) {
-        console.error('Shipping cutoff fejlede:', err);
-        elementAddClass('.lktn-shipping-timer', 'timer-hidden');
+      .then(function (data) {
+        pending = null;
+        writeCache(data);
+        return data;
+      })
+      .catch(function (error) {
+        pending = null;
+        throw error;
       });
+
+    return pending;
   }
 
-  function elementSetContent(selector, text) {
+  function apply(data) {
+    stopCountdown();
+    setClass('.lktn-shipping-timer', 'timer-hidden', false);
+    setClass('.timer-today', 'timer-hidden', true);
+    setClass('.timer-text', 'timer-hidden', true);
+    setClass('.timer-today-badge', 'urgent', false);
+
+    if (!data.today) {
+      setText('.timer-text-badge', data.tomorrow ? 'i morgen kl. ' + data.clock : data.text);
+      setClass('.timer-text', 'timer-hidden', false);
+      return;
+    }
+
+    var cutoffAt = new Date(data.cutoffAt).getTime();
+    if (isNaN(cutoffAt)) throw new Error('Ugyldig cutoffAt: ' + data.cutoffAt);
+
+    setClass('.timer-today', 'timer-hidden', false);
+    tick(cutoffAt);
+    countdown = setInterval(function () {
+      tick(cutoffAt);
+    }, 1000);
+  }
+
+  function tick(cutoffAt) {
+    var remaining = Math.floor((cutoffAt - Date.now()) / 1000);
+
+    if (remaining <= 0) {
+      stopCountdown();
+      setClass('.timer-today', 'timer-hidden', true);
+      loadCutoff(true).then(apply).catch(fail);
+      return;
+    }
+
+    var hours = Math.floor(remaining / 3600);
+    var minutes = Math.floor((remaining % 3600) / 60);
+    var seconds = remaining % 60;
+
+    setText(
+      '.timer-today-badge',
+      (hours > 0 ? String(hours).padStart(2, '0') + ':' : '') +
+        String(minutes).padStart(2, '0') +
+        ':' +
+        String(seconds).padStart(2, '0')
+    );
+
+    setClass('.timer-today-badge', 'urgent', remaining < 3600);
+  }
+
+  function fail(error) {
+    console.error('Shipping cutoff fejlede:', error);
+    stopCountdown();
+    setClass('.lktn-shipping-timer', 'timer-hidden', true);
+  }
+
+  function stopCountdown() {
+    if (countdown != null) {
+      clearInterval(countdown);
+      countdown = null;
+    }
+  }
+
+  function readCache() {
+    try {
+      var raw = sessionStorage.getItem(CACHE_KEY);
+      if (!raw) return null;
+      var entry = JSON.parse(raw);
+      if (Date.now() - entry.at > CACHE_TTL) return null;
+      return entry.data;
+    } catch (error) {
+      return null;
+    }
+  }
+
+  function writeCache(data) {
+    try {
+      sessionStorage.setItem(CACHE_KEY, JSON.stringify({ at: Date.now(), data: data }));
+    } catch (error) {
+      // Private mode or a full quota — the timer works without the cache.
+    }
+  }
+
+  // textContent, not innerHTML: data.text comes from the API.
+  function setText(selector, text) {
     document.querySelectorAll(selector).forEach(function (el) {
-      el.innerHTML = text;
+      el.textContent = text == null ? '' : text;
     });
   }
 
-  function elementAddClass(selector, className) {
+  function setClass(selector, className, on) {
     document.querySelectorAll(selector).forEach(function (el) {
-      el.classList.add(className);
+      el.classList.toggle(className, on);
     });
   }
 
-  function elementRemoveClass(selector, className) {
-    document.querySelectorAll(selector).forEach(function (el) {
-      el.classList.remove(className);
-    });
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', sync);
+  } else {
+    sync();
   }
 
-  document.addEventListener('DOMContentLoaded', render);
-  document.addEventListener('variant:change', injectInventory);
+  document.addEventListener('variant:change', sync);
 
-  injectInventory();
-
-  function injectInventory() {
-    var soldOutBadge = document.querySelector('sold-out-badge');
-    if (soldOutBadge != null) return;
-
-    var variantInventoryElement = document.querySelector('variant-inventory');
-
-    if (variantInventoryElement == null) return;
-
-    var spanElement = variantInventoryElement.querySelector('span');
-    if (spanElement == null) return;
-
-    var shippingTimerElement = variantInventoryElement.querySelector('.lktn-shipping-timer');
-    if (shippingTimerElement != null) return;
-
-    var rootElement = document.getElementById('lktn-shipping-timer-wrapper').querySelector('.lktn-shipping-timer');
-    if (rootElement == null) return;
-    var newElement = rootElement.cloneNode(true);
-
-    spanElement.after(newElement);
-  }
+  // No point counting down in a tab nobody is looking at.
+  document.addEventListener('visibilitychange', function () {
+    if (document.hidden) {
+      stopCountdown();
+    } else {
+      sync();
+    }
+  });
 {% endjavascript %}
