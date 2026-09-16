@@ -1,0 +1,13 @@
+# Shopify's GitHub theme sync writes LF, and all theme files except a handful
+# of hand-authored snippets already use it. Pin LF so an editor or script that
+# rewrites a file wholesale cannot turn a small change into a full-file diff.
+* text=auto eol=lf
+
+*.liquid text eol=lf
+*.json   text eol=lf
+*.js     text eol=lf
+*.css    text eol=lf
+*.md     text eol=lf
+*.txt    text eol=lf
+
+*.png binary
