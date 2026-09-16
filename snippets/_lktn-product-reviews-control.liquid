@@ -1,3 +1,16 @@
+{%- comment -%}
+  DEPRECATED — old snippet for old templates. Do not maintain.
+
+  Only rendered from templates/product.json and
+  templates/product.noshow-2026-01.json. As of 2026-09-16 no product is
+  assigned to either; every live product uses noshow-2026-08-no-ss,
+  vaskepose-01 or giftcard.
+
+  The section IDs below are hardcoded to template IDs that no longer exist
+  (live product templates are 30585985073484 / 30585985106252), so the snippet
+  is a no-op. Delete it together with the old templates rather than fixing it.
+{%- endcomment -%}
+
 {% assign review_images = product.metafields.custom.review_image_list %}
 {% assign review_videos = product.metafields.custom.review_video_list %}
 

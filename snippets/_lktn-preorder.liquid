@@ -1,3 +1,16 @@
+{%- comment -%}
+  DEPRECATED — old snippet for an old template. Do not maintain.
+
+  Only rendered from templates/product.json. As of 2026-09-16 no product is
+  assigned to that template; every live product uses noshow-2026-08-no-ss,
+  vaskepose-01 or giftcard. Pre-order on the storefront is handled by the
+  Essential Pre-Order app.
+
+  Note: product.json is still Shopify's fallback for a product created without
+  a template suffix, so this can technically render. Delete it together with
+  the old templates rather than fixing it in place.
+{%- endcomment -%}
+
 {% liquid
   assign variant = product.selected_or_first_available_variant
   assign formatted_date = variant.next_incoming_date | date: format: 'abbreviated_date'

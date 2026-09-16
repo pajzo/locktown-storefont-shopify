@@ -1,3 +1,13 @@
+{%- comment -%}
+  SUPERSEDED by _lktn-payment-icons2, which does the same thing with an
+  `align` parameter instead of per-template <style> overrides.
+
+  Still rendered from templates/product.giftcard.json (live — the Gavekort
+  product), plus the unused product.json and product.noshow-2026-01.json.
+  Do not extend this one; migrate the giftcard template to
+  _lktn-payment-icons2 and delete this file.
+{%- endcomment -%}
+
 <ul class="lktn-payment-icons h-stack wrap gap-2">
   <li class="contents">{{ 'mobilepay' | payment_type_svg_tag }}</li>
   {%- for type in shop.enabled_payment_types -%}
